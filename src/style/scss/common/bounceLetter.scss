@@ -1,0 +1,33 @@
+.animate-letter {
+    display: inline-block;
+
+    &.animate {
+        animation-name: text;
+        animation-duration: 800ms;
+        animation-timing-function: cubic-bezier(.15,1.41,.1,1.8);
+    }
+}
+
+@keyframes text {
+    0% {
+        transform: scale(1,1);
+    }
+    25% {
+        transform: scale(1, .5);
+    }
+    40% {
+        transform: scale(1, 1);
+    }
+    70% {
+        transform: scale(1, .7);
+    }
+    80% {
+        transform: scale(1, 1);
+    }
+    90% {
+        transform: scale(1, .9);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}

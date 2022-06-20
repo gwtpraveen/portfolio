@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  height: 10vh;
+  max-width: 1440px;
+  margin: auto;
+}
+.nav .links {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+}
+.nav .links .link {
+  position: relative;
+  font-size: 1.2rem;
+}
+.nav .links .link a {
+  text-decoration: none;
+  color: black;
+}
+.nav .links .link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgb(48, 48, 48);
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  transition: width 500ms ease;
+}
+.nav .links .link:hover::after {
+  width: 100%;
+}

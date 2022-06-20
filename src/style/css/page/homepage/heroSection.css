@@ -1,0 +1,30 @@
+.hero-section {
+  height: 100vh;
+  position: relative;
+}
+.hero-section .h1 {
+  font-size: 5rem;
+  letter-spacing: 4px;
+}
+.hero-section .content-div {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1440px;
+  margin: auto;
+}
+.hero-section .content-div .discription {
+  font-size: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+.hero-section .canvas {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

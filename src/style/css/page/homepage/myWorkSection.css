@@ -1,0 +1,46 @@
+.myWorkSection {
+  max-width: 1440px;
+  margin: auto;
+}
+.myWorkSection .h2 {
+  font-size: 3.5rem;
+}
+.myWorkSection-discription {
+  font-size: 1.3rem;
+  margin: 2rem 0 4rem;
+}
+.myWorkSection .showcase-div .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.myWorkSection .showcase-div .row .thumbnail-right {
+  justify-self: flex-end;
+}
+.myWorkSection .showcase-div .row .details {
+  width: 80%;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.myWorkSection .showcase-div .row .details-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.myWorkSection .showcase-div .row .details-discription {
+  margin: 1rem 0;
+}
+.myWorkSection .showcase-div .row .details-ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+}
+.myWorkSection .showcase-div .row .details-left {
+  text-align: right;
+  justify-self: flex-end;
+  margin-right: 1rem;
+}
+.myWorkSection .showcase-div .row .details-left .details-ul {
+  justify-content: flex-end;
+}

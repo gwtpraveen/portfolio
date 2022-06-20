@@ -1,0 +1,60 @@
+.myWorkSection {
+    max-width: 1440px;
+    margin: auto;
+
+    .h2 {
+        font-size: 3.5rem;
+    }
+
+    &-discription {
+        font-size: 1.3rem;
+        margin: 2rem 0 4rem;
+    }
+
+    .showcase-div {
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            margin: 1.5rem 0;
+
+            .thumbnail {
+                &-right {
+                    justify-self: flex-end;
+                }
+            }
+
+            .details {
+                width: 80%;
+                margin-left: 1rem;
+                font-size: 1.2rem;
+
+                &-title {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+
+                &-discription {
+                    margin: 1rem 0;
+                }
+
+                &-ul {
+                    list-style-type: none;
+                    display: flex;
+                    gap: 1.5rem;
+                    font-size: 1.1rem;
+                }
+
+                &-left {
+                    text-align: right;
+                    justify-self: flex-end;
+                    margin-right: 1rem;
+
+                    .details-ul {
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}
