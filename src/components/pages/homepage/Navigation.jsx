@@ -6,13 +6,13 @@ const Navigation = (props) => {
             <img src="" alt="logo" />
             <ul className="links">
                 <li className="link">
-                    <a href="/">MY WORK</a>
+                    <a href="#mywork">MY WORK</a>
                 </li>
                 <li className="link">
-                    <a href="/">ABOUT ME</a>
+                    <a href="#about">ABOUT ME</a>
                 </li>
                 <li className="link">
-                    <a href="/">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </nav>

@@ -1,9 +1,11 @@
 import "../../../style/css/page/homepage/myWorkSection.css";
+import BounceLetter from "../../common/BounceLetter";
 
 const MyWorkSection = (props) => {
     return ( 
-        <section className="myWorkSection">
-            <h2 className="h2">My Work</h2>
+        <section className="myWorkSection" id="mywork">
+            <p className="waterMark">WORK</p>
+            <h2 className="h2"><BounceLetter>My</BounceLetter> <BounceLetter>Work</BounceLetter></h2>
             <p className="myWorkSection-discription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo neque fugit in amet eaque, est quidem inventore ut laboriosam esse. Libero, velit. Commodi molestias praesentium dolor architecto aliquid in voluptatem.</p>
             <div className="showcase-div">
                 <div className="row">

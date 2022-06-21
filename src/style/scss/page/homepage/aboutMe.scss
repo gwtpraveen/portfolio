@@ -1,0 +1,34 @@
+@use "../../global/colors" as *;
+
+.aboutMe {
+    max-width: 1440px;
+    margin:  auto;
+    padding-top: 2rem;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+
+    .details {
+        width: 100%;
+        max-width: 600px;
+        .h2 {
+            font-size: 3.5rem;
+            cursor: pointer;
+    
+            &::after {
+                content: "#";
+                margin-left: 1rem;
+                color: $color-accent;
+                opacity: 0;
+                transition: opacity 500ms ease;
+            }
+    
+            &:hover::after {
+                opacity: 1;
+            }
+        }
+    }
+
+}

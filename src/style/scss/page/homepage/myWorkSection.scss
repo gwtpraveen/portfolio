@@ -1,9 +1,35 @@
+@use "../../global/colors" as *;
+
 .myWorkSection {
     max-width: 1440px;
-    margin: auto;
+    margin:  auto;
+    padding-top: 2rem;
+    overflow-x: hidden;
+
+    .waterMark {
+        position: absolute;
+        font-size: 25vw;
+        font-weight: bolder;
+        z-index: -1;
+        opacity: .1;
+        left: 50%;
+    }
 
     .h2 {
         font-size: 3.5rem;
+        cursor: pointer;
+
+        &::after {
+            content: "#";
+            margin-left: 1rem;
+            color: $color-accent;
+            opacity: 0;
+            transition: opacity 500ms ease;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
     }
 
     &-discription {
@@ -26,12 +52,25 @@
 
             .details {
                 width: 80%;
-                margin-left: 1rem;
+                margin-left: 1.5rem;
                 font-size: 1.2rem;
 
                 &-title {
                     font-size: 1.6rem;
                     font-weight: bold;
+                    cursor: pointer;
+
+                    &::after {
+                        content: "#";
+                        margin-left: .5rem;
+                        color: $color-accent;
+                        opacity: 0;
+                        transition: opacity 500ms ease;
+                    }
+            
+                    &:hover::after {
+                        opacity: 1;
+                    }
                 }
 
                 &-discription {
@@ -41,18 +80,38 @@
                 &-ul {
                     list-style-type: none;
                     display: flex;
-                    gap: 1.5rem;
+                    gap: 1.8rem;
                     font-size: 1.1rem;
+
+                    &_li {
+                        position: relative;
+                        cursor: pointer;
+                        &::after, &::before {
+                            position: absolute;
+                            opacity: 0;
+                            transition: 400ms ease;
+                        }
+
+                        &::after {
+                            content: "/>";
+                            left: 105%;
+                        }
+
+                        &::before {
+                            content: "<";
+                            right: 105%;
+                        }
+
+                        &:hover::after, &:hover::before {
+                            opacity: 1;
+                            font-weight: bold;
+                        }
+                    }
                 }
 
                 &-left {
-                    text-align: right;
                     justify-self: flex-end;
-                    margin-right: 1rem;
-
-                    .details-ul {
-                        justify-content: flex-end;
-                    }
+                    margin-right: 1.5rem;
                 }
             }
         }

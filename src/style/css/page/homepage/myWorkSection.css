@@ -1,9 +1,30 @@
 .myWorkSection {
   max-width: 1440px;
   margin: auto;
+  padding-top: 2rem;
+  overflow-x: hidden;
+}
+.myWorkSection .waterMark {
+  position: absolute;
+  font-size: 25vw;
+  font-weight: bolder;
+  z-index: -1;
+  opacity: 0.1;
+  left: 50%;
 }
 .myWorkSection .h2 {
   font-size: 3.5rem;
+  cursor: pointer;
+}
+.myWorkSection .h2::after {
+  content: "#";
+  margin-left: 1rem;
+  color: red;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.myWorkSection .h2:hover::after {
+  opacity: 1;
 }
 .myWorkSection-discription {
   font-size: 1.3rem;
@@ -20,12 +41,23 @@
 }
 .myWorkSection .showcase-div .row .details {
   width: 80%;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   font-size: 1.2rem;
 }
 .myWorkSection .showcase-div .row .details-title {
   font-size: 1.6rem;
   font-weight: bold;
+  cursor: pointer;
+}
+.myWorkSection .showcase-div .row .details-title::after {
+  content: "#";
+  margin-left: 0.5rem;
+  color: red;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.myWorkSection .showcase-div .row .details-title:hover::after {
+  opacity: 1;
 }
 .myWorkSection .showcase-div .row .details-discription {
   margin: 1rem 0;
@@ -33,14 +65,31 @@
 .myWorkSection .showcase-div .row .details-ul {
   list-style-type: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.8rem;
   font-size: 1.1rem;
 }
-.myWorkSection .showcase-div .row .details-left {
-  text-align: right;
-  justify-self: flex-end;
-  margin-right: 1rem;
+.myWorkSection .showcase-div .row .details-ul_li {
+  position: relative;
+  cursor: pointer;
 }
-.myWorkSection .showcase-div .row .details-left .details-ul {
-  justify-content: flex-end;
+.myWorkSection .showcase-div .row .details-ul_li::after, .myWorkSection .showcase-div .row .details-ul_li::before {
+  position: absolute;
+  opacity: 0;
+  transition: 400ms ease;
+}
+.myWorkSection .showcase-div .row .details-ul_li::after {
+  content: "/>";
+  left: 105%;
+}
+.myWorkSection .showcase-div .row .details-ul_li::before {
+  content: "<";
+  right: 105%;
+}
+.myWorkSection .showcase-div .row .details-ul_li:hover::after, .myWorkSection .showcase-div .row .details-ul_li:hover::before {
+  opacity: 1;
+  font-weight: bold;
+}
+.myWorkSection .showcase-div .row .details-left {
+  justify-self: flex-end;
+  margin-right: 1.5rem;
 }

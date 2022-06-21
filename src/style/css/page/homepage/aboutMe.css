@@ -1,0 +1,28 @@
+.aboutMe {
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 2rem;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+.aboutMe .details {
+  width: 100%;
+  max-width: 600px;
+}
+.aboutMe .details .h2 {
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+.aboutMe .details .h2::after {
+  content: "#";
+  margin-left: 1rem;
+  color: red;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.aboutMe .details .h2:hover::after {
+  opacity: 1;
+}
