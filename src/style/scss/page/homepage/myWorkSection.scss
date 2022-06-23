@@ -4,20 +4,22 @@
     max-width: 1440px;
     margin:  auto;
     padding-top: 2rem;
-    overflow-x: hidden;
+    position: relative;
 
     .waterMark {
         position: absolute;
         font-size: 25vw;
         font-weight: bolder;
-        z-index: -1;
         opacity: .1;
-        left: 50%;
+        z-index: -1;
+        left: 47%;
+        top: 10%;
     }
 
     .h2 {
         font-size: 3.5rem;
         cursor: pointer;
+        position: relative;
 
         &::after {
             content: "#";
@@ -25,6 +27,7 @@
             color: $color-accent;
             opacity: 0;
             transition: opacity 500ms ease;
+            position: absolute;
         }
 
         &:hover::after {
@@ -112,6 +115,45 @@
                 &-left {
                     justify-self: flex-end;
                     margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .myWorkSection {
+        max-width: 500px;
+        text-align: center;
+
+        .waterMark {
+            font-size: 15rem;
+            left: 10%;
+            top: 5%;
+        }
+
+        .showcase-div {
+            .row {
+                display: block;
+
+                .details {
+                    margin: 1.5rem auto 1rem;
+                    &-ul {
+                        justify-content: center;
+                    }
+                }
+
+                .thumbnail {
+                    width: 100%;
+                    margin-top: 1rem;
+                }
+            }
+
+            .row.img-top {
+                display: flex;
+                flex-direction: column-reverse;
+                .thumbnail {
+                    order: 1;
                 }
             }
         }

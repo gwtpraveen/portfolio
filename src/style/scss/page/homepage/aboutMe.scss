@@ -10,12 +10,16 @@
     align-items: center;
     min-height: 100vh;
 
-    .details {
+    .canvas {
         width: 100%;
-        max-width: 600px;
+        height: 100%;
+    }
+
+    .details {
         .h2 {
             font-size: 3.5rem;
             cursor: pointer;
+            position: relative;
     
             &::after {
                 content: "#";
@@ -23,12 +27,70 @@
                 color: $color-accent;
                 opacity: 0;
                 transition: opacity 500ms ease;
+                position: absolute;
             }
     
             &:hover::after {
                 opacity: 1;
             }
         }
-    }
 
+        .discription {
+            width: 80%;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+
+            &.discription-1 {
+                margin-top: 2rem;
+            }
+        }
+
+        .h3 {
+            font-size: 1.5rem;
+            margin-top: 5rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            .social-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: black;
+                font-size: 1.3rem;
+                width: 45px;
+                height: 45px;
+                border: 1px solid black;
+                border-radius: 50%;
+
+                &:hover {
+                    color: red;
+                    border-color: red;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 800px) {
+    .aboutMe {
+        flex-direction: column;
+        text-align: center;
+        max-width: 500px;
+
+        .details {
+            .discription {
+                width: 100%;
+            }
+        }
+
+        .social-links {
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+    }
 }

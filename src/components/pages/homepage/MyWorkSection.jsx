@@ -20,7 +20,7 @@ const MyWorkSection = (props) => {
                         </ul>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row img-top">
                     <div className="details details-left">
                         <p className="details-title">Title</p>
                         <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
@@ -44,7 +44,7 @@ const MyWorkSection = (props) => {
                         </ul>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row img-top">
                     <div className="details details-left">
                         <p className="details-title">Title</p>
                         <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>

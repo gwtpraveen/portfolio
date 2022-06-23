@@ -8,21 +8,71 @@
   align-items: center;
   min-height: 100vh;
 }
-.aboutMe .details {
+.aboutMe .canvas {
   width: 100%;
-  max-width: 600px;
+  height: 100%;
 }
 .aboutMe .details .h2 {
   font-size: 3.5rem;
   cursor: pointer;
+  position: relative;
 }
 .aboutMe .details .h2::after {
   content: "#";
   margin-left: 1rem;
-  color: red;
+  color: black;
   opacity: 0;
   transition: opacity 500ms ease;
+  position: absolute;
 }
 .aboutMe .details .h2:hover::after {
   opacity: 1;
+}
+.aboutMe .details .discription {
+  width: 80%;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+.aboutMe .details .discription.discription-1 {
+  margin-top: 2rem;
+}
+.aboutMe .details .h3 {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+.aboutMe .details .social-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.aboutMe .details .social-links .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.aboutMe .details .social-links .social-link:hover {
+  color: red;
+  border-color: red;
+}
+
+@media (max-width: 800px) {
+  .aboutMe {
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+  }
+  .aboutMe .details .discription {
+    width: 100%;
+  }
+  .aboutMe .social-links {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }

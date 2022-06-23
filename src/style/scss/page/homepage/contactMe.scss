@@ -12,10 +12,16 @@
 
     &-content {
         width: 80%;
+
+        .discription {
+            font-size: 1.3rem;
+            margin-top: 2rem;
+        }
     }
     .h2 {
         font-size: 3.5rem;
         cursor: pointer;
+        position: relative;
 
         &::after {
             content: "#";
@@ -23,6 +29,7 @@
             color: $color-accent;
             opacity: 0;
             transition: opacity 500ms ease;
+            position: absolute;
         }
 
         &:hover::after {
@@ -31,6 +38,7 @@
     }
 
     .form {
+        margin-top: 3rem;
         .input-group {
             margin-bottom: 1rem;
             position: relative;
@@ -38,7 +46,7 @@
                 content: "";
                 height: 5px;
                 width: 0%;
-                background-color: red;
+                background-color: $color-accent;
                 position: absolute;
                 left: 0;
                 top: 100%;
@@ -75,18 +83,36 @@
                     font-family: inherit;
                 }
             }
+
+        }
+        .btn.outline {
+            border: 1px solid black;
         }
     }
 
     .map-container {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         overflow: hidden;
         background-color: red;
 
         .map {
             width: 100%;
             height: 100%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .contactMe {
+        grid-template-columns: 1fr;
+        text-align: center;
+        &-content {
+            width: 100%;
+        }
+
+        .map-container {
+            margin-top: 2rem;
         }
     }
 }

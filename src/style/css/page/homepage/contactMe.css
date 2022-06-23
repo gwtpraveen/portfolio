@@ -11,19 +11,28 @@
 .contactMe-content {
   width: 80%;
 }
+.contactMe-content .discription {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
 .contactMe .h2 {
   font-size: 3.5rem;
   cursor: pointer;
+  position: relative;
 }
 .contactMe .h2::after {
   content: "#";
   margin-left: 1rem;
-  color: red;
+  color: black;
   opacity: 0;
   transition: opacity 500ms ease;
+  position: absolute;
 }
 .contactMe .h2:hover::after {
   opacity: 1;
+}
+.contactMe .form {
+  margin-top: 3rem;
 }
 .contactMe .form .input-group {
   margin-bottom: 1rem;
@@ -33,7 +42,7 @@
   content: "";
   height: 5px;
   width: 0%;
-  background-color: red;
+  background-color: black;
   position: absolute;
   left: 0;
   top: 100%;
@@ -62,13 +71,29 @@
   font-size: 1.2rem;
   font-family: inherit;
 }
+.contactMe .form .btn.outline {
+  border: 1px solid black;
+}
 .contactMe .map-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   background-color: red;
 }
 .contactMe .map-container .map {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 800px) {
+  .contactMe {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .contactMe-content {
+    width: 100%;
+  }
+  .contactMe .map-container {
+    margin-top: 2rem;
+  }
 }

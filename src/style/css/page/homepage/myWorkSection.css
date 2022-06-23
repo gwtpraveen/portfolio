@@ -2,26 +2,29 @@
   max-width: 1440px;
   margin: auto;
   padding-top: 2rem;
-  overflow-x: hidden;
+  position: relative;
 }
 .myWorkSection .waterMark {
   position: absolute;
   font-size: 25vw;
   font-weight: bolder;
-  z-index: -1;
   opacity: 0.1;
-  left: 50%;
+  z-index: -1;
+  left: 47%;
+  top: 10%;
 }
 .myWorkSection .h2 {
   font-size: 3.5rem;
   cursor: pointer;
+  position: relative;
 }
 .myWorkSection .h2::after {
   content: "#";
   margin-left: 1rem;
-  color: red;
+  color: black;
   opacity: 0;
   transition: opacity 500ms ease;
+  position: absolute;
 }
 .myWorkSection .h2:hover::after {
   opacity: 1;
@@ -52,7 +55,7 @@
 .myWorkSection .showcase-div .row .details-title::after {
   content: "#";
   margin-left: 0.5rem;
-  color: red;
+  color: black;
   opacity: 0;
   transition: opacity 500ms ease;
 }
@@ -92,4 +95,36 @@
 .myWorkSection .showcase-div .row .details-left {
   justify-self: flex-end;
   margin-right: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .myWorkSection {
+    max-width: 500px;
+    text-align: center;
+  }
+  .myWorkSection .waterMark {
+    font-size: 15rem;
+    left: 10%;
+    top: 5%;
+  }
+  .myWorkSection .showcase-div .row {
+    display: block;
+  }
+  .myWorkSection .showcase-div .row .details {
+    margin: 1.5rem auto 1rem;
+  }
+  .myWorkSection .showcase-div .row .details-ul {
+    justify-content: center;
+  }
+  .myWorkSection .showcase-div .row .thumbnail {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .myWorkSection .showcase-div .row.img-top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .myWorkSection .showcase-div .row.img-top .thumbnail {
+    order: 1;
+  }
 }
