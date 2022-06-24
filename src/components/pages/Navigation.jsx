@@ -2,15 +2,15 @@ import "../../style/css/page/homepage/navigation.css";
 import { useRef } from "react";
 
 const Navigation = (props) => {
-    const hamburgetEl = useRef();
+    const navEl = useRef();
     const handleNav = () => {
-        hamburgetEl.current.classList.toggle("active");
+        navEl.current.classList.toggle("active");
     };
 
     return ( 
-        <nav className="nav">
+        <nav className="nav" ref={navEl}>
             <img src="" alt="logo" className="logo"/>
-            <div className="hamburger-icon" ref={hamburgetEl} onClick={handleNav}>
+            <div className="hamburger-icon" onClick={handleNav}>
                 <span className="line line1"></span>
                 <span className="line line2"></span>
                 <span className="line line3"></span>
