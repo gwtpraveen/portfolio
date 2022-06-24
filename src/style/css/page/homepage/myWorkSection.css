@@ -39,6 +39,12 @@
   align-items: center;
   margin: 1.5rem 0;
 }
+.myWorkSection .showcase-div .row .thumbnail {
+  width: 100%;
+}
+.myWorkSection .showcase-div .row .thumbnail .img {
+  width: 100%;
+}
 .myWorkSection .showcase-div .row .thumbnail-right {
   justify-self: flex-end;
 }
@@ -103,8 +109,6 @@
     text-align: center;
   }
   .myWorkSection .waterMark {
-    font-size: 15rem;
-    left: 10%;
     top: 5%;
   }
   .myWorkSection .showcase-div .row {

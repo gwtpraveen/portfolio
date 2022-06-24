@@ -2,15 +2,20 @@
   max-width: 1440px;
   margin: auto;
   padding-top: 2rem;
-  overflow-x: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
+  position: relative;
 }
-.aboutMe .canvas {
-  width: 100%;
-  height: 100%;
+.aboutMe .waterMark {
+  position: absolute;
+  font-size: 25vw;
+  font-weight: bolder;
+  opacity: 0.1;
+  z-index: -1;
+  left: 54%;
+  top: 13%;
 }
 .aboutMe .details .h2 {
   font-size: 3.5rem;
@@ -26,6 +31,35 @@
   position: absolute;
 }
 .aboutMe .details .h2:hover::after {
+  opacity: 1;
+}
+.aboutMe .details-row .whatiuse {
+  margin-top: 2rem;
+  flex-basis: 100%;
+}
+.aboutMe .details-row .whatiuse h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.aboutMe .details-row .whatiuse div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.3rem;
+}
+.aboutMe .details-row .whatiuse div ul {
+  margin-top: 1rem;
+  list-style: none;
+}
+.aboutMe .details-row .whatiuse div ul li {
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.aboutMe .details-row .whatiuse div ul li::after {
+  content: " />";
+  opacity: 0;
+  transition: 500ms ease;
+}
+.aboutMe .details-row .whatiuse div ul li:hover::after {
   opacity: 1;
 }
 .aboutMe .details .discription {
@@ -67,6 +101,11 @@
     flex-direction: column;
     text-align: center;
     max-width: 500px;
+  }
+  .aboutMe .waterMark {
+    font-size: 25vw;
+    left: 54%;
+    top: 13%;
   }
   .aboutMe .details .discription {
     width: 100%;

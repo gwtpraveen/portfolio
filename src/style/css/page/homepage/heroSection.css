@@ -28,3 +28,29 @@
   left: 0;
   z-index: -1;
 }
+
+@media (max-width: 700px) {
+  .hero-section .h1 {
+    font-size: 10vw;
+  }
+}
+@media (max-width: 400px) {
+  .hero-section .content-div .btn {
+    padding: 0.5em 1em;
+  }
+  .hero-section .content-div .discription {
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 370px) {
+  .hero-section .h1 {
+    font-size: 9vw;
+  }
+  .hero-section .content-div .btn {
+    font-size: 1rem;
+  }
+  .hero-section .content-div .discription {
+    font-size: 1rem;
+    margin: 0.4rem 0;
+  }
+}

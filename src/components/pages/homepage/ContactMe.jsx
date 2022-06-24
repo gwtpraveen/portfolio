@@ -38,6 +38,7 @@ const ContactMe = (props) => {
 
     return ( 
         <section className="contactMe" id="contact">
+            <p className="waterMark">Contact</p>
             <div className="contactMe-content">
                 <h2 className="h2"><BounceLetter>Contact</BounceLetter> <BounceLetter>Me</BounceLetter></h2>
                 <p className="discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam, minus quo dolorem itaque omnis distinctio aspernatur rerum eius iste commodi rem veritatis optio ab?</p>

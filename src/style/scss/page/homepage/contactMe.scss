@@ -2,13 +2,24 @@
 
 .contactMe {
     max-width: 1440px;
-    margin:  auto;
+    margin: 2rem auto 1rem;
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
+    position: relative;
+
+    .waterMark {
+        position: absolute;
+        font-size: 25vw;
+        font-weight: bolder;
+        opacity: .1;
+        z-index: -1;
+        left: 30%;
+        top: 15%;
+    }
 
     &-content {
         width: 80%;
@@ -99,6 +110,10 @@
         .map {
             width: 100%;
             height: 100%;
+            background-image: url("../../../../../public/images/map.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
         }
     }
 }
@@ -107,6 +122,11 @@
     .contactMe {
         grid-template-columns: 1fr;
         text-align: center;
+
+        .waterMark {
+            top: 7%;
+            left: 45%;
+        }
         &-content {
             width: 100%;
         }

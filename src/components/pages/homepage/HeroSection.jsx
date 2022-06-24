@@ -1,5 +1,5 @@
 import BounceLetter from "../../common/BounceLetter";
-import Navigation from "./Navigation";
+import Navigation from "../Navigation";
 import "../../../style/css/page/homepage/heroSection.css";
 import "../../../style/css/utils/buttons.css";
 import { useRef, useEffect } from "react";

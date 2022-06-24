@@ -5,6 +5,7 @@
     margin:  auto;
     padding-top: 2rem;
     position: relative;
+    // overflow-x: hidden;
 
     .waterMark {
         position: absolute;
@@ -48,6 +49,10 @@
             margin: 1.5rem 0;
 
             .thumbnail {
+                .img {
+                    width: 100%;
+                }
+                width: 100%;
                 &-right {
                     justify-self: flex-end;
                 }
@@ -127,8 +132,6 @@
         text-align: center;
 
         .waterMark {
-            font-size: 15rem;
-            left: 10%;
             top: 5%;
         }
 

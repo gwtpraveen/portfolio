@@ -7,7 +7,50 @@
     max-width: 1440px;
     margin: auto;
     .logo {
+        opacity: 0;
+    }
 
+    .hamburger-icon {
+        position: relative;
+        height: 30px;
+        display: none;
+        cursor: pointer;
+        width: 40px;
+        .line {
+            position: absolute;
+            background-color: black;
+            width: 40px;
+            height: 5px;
+            transition: transform 500ms ease;
+        }
+
+        .line1 {
+            top: 10%;
+        }
+
+        .line2 {
+            top: 50%;
+        }
+
+        .line3 {
+            top: 90%;
+
+        }
+
+        &.active {
+            .line2 {
+                display: none;
+            }
+            .line1 {
+                top: 45%;
+                transform: rotateZ(45deg);
+            }
+
+            .line3 {
+                transform: rotateZ(-45deg);
+                top: 45%;
+            }
+        }
     }
 
     .links {
@@ -41,4 +84,16 @@
             }
         }
     }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        .links {
+            display: none;
+        }
+        
+        .hamburger-icon {
+            display: block;
+        }
+ }
 }
