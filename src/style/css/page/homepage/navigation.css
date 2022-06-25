@@ -87,6 +87,7 @@
   .nav.active .links {
     display: block;
     position: absolute;
+    z-index: 6;
     top: 110%;
     left: 0;
     right: 0;

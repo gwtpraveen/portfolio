@@ -3,10 +3,11 @@
   margin: auto;
   padding-top: 2rem;
   position: relative;
+  overflow-x: hidden;
 }
 .myWorkSection .waterMark {
   position: absolute;
-  font-size: 25vw;
+  font-size: 25rem;
   font-weight: bolder;
   opacity: 0.1;
   z-index: -1;
@@ -109,6 +110,7 @@
     text-align: center;
   }
   .myWorkSection .waterMark {
+    font-size: 25vw;
     top: 5%;
   }
   .myWorkSection .showcase-div .row {

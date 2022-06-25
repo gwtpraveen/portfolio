@@ -13,7 +13,7 @@
 
     .waterMark {
         position: absolute;
-        font-size: 25vw;
+        font-size: 25rem;
         font-weight: bolder;
         opacity: .1;
         z-index: -1;
@@ -124,6 +124,7 @@
         text-align: center;
 
         .waterMark {
+            font-size: 25vw;
             top: 7%;
             left: 45%;
         }

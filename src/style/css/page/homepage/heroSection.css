@@ -14,10 +14,27 @@
   align-items: flex-start;
   max-width: 1440px;
   margin: auto;
+  position: relative;
 }
 .hero-section .content-div .discription {
   font-size: 1.5rem;
   margin: 1rem 0 2rem;
+}
+.hero-section .content-div .theme-switch {
+  position: absolute;
+  right: 0rem;
+  bottom: 6rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: black;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
 }
 .hero-section .canvas {
   background-color: rgb(255, 255, 255);
@@ -53,4 +70,8 @@
     font-size: 1rem;
     margin: 0.4rem 0;
   }
+}
+body.dark .hero-section .content-div .theme-switch {
+  background-color: #fff;
+  color: #000;
 }

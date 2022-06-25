@@ -6,6 +6,10 @@ import { useRef, useEffect } from "react";
 
 const HeroSection = (props) => {
     const canvasEle = useRef();
+    const handleTheme = () => {
+        document.body.classList.toggle("dark");
+    };
+
     useEffect(() => {
         
     })
@@ -21,6 +25,7 @@ const HeroSection = (props) => {
                 </h1>
                 <p className="discription">Junior Front End Developer</p>
                 <button className="btn">Check My Work</button>
+                <button className="theme-switch" onClick={handleTheme} title="theme Switch">D</button>
             </div>
             <canvas id="canvas" className="canvas" ref={canvasEle}></canvas>
         </section>
