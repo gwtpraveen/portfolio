@@ -97,7 +97,7 @@
 
         }
         .btn.outline {
-            border: 1px solid black;
+            border-width: 1px;
         }
     }
 
@@ -134,6 +134,27 @@
 
         .map-container {
             margin-top: 2rem;
+        }
+    }
+}
+
+body.dark {
+    .contactMe {
+        .form {
+            .input-group {
+                &::after {
+                    background-color: #fff;
+                }
+
+                .input, textarea {
+                    background-color: rgb(74, 74, 74);
+                    color: #fff;
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
 }

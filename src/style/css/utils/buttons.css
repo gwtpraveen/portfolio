@@ -14,3 +14,13 @@
   color: #fff;
   border-color: black;
 }
+
+body.dark .btn {
+  border-color: #fff;
+  color: #fff;
+}
+body.dark .btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}

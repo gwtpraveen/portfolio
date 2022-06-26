@@ -82,7 +82,7 @@
   font-family: inherit;
 }
 .contactMe .form .btn.outline {
-  border: 1px solid black;
+  border-width: 1px;
 }
 .contactMe .map-container {
   width: 100%;
@@ -115,4 +115,14 @@
   .contactMe .map-container {
     margin-top: 2rem;
   }
+}
+body.dark .contactMe .form .input-group::after {
+  background-color: #fff;
+}
+body.dark .contactMe .form .input-group .input, body.dark .contactMe .form .input-group textarea {
+  background-color: rgb(74, 74, 74);
+  color: #fff;
+}
+body.dark .contactMe .form .input-group .input::placeholder, body.dark .contactMe .form .input-group textarea::placeholder {
+  color: #fff;
 }

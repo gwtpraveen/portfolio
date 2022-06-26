@@ -116,3 +116,11 @@
     margin-bottom: 2rem;
   }
 }
+body.dark .aboutMe .details .social-links .social-link {
+  color: #fff;
+  border-color: #fff;
+}
+body.dark .aboutMe .details .social-links .social-link:hover {
+  color: red;
+  border-color: red;
+}

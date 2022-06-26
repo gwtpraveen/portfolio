@@ -122,3 +122,18 @@
  }
 }
 
+body.dark {
+    .nav {
+        .links {
+            .link {
+                a {
+                    color: #fff;
+                }
+
+                &::after {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
