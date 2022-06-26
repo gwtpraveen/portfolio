@@ -155,6 +155,15 @@ body.dark {
                     }
                 }
             }
+
+            .btn.outline {
+                border-color: rgb(171, 171, 171);
+                color: rgb(171, 171, 171);
+
+                &:hover {
+                    color: black;
+                }
+            }
         }
     }
 }

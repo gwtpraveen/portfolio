@@ -126,3 +126,10 @@ body.dark .contactMe .form .input-group .input, body.dark .contactMe .form .inpu
 body.dark .contactMe .form .input-group .input::placeholder, body.dark .contactMe .form .input-group textarea::placeholder {
   color: #fff;
 }
+body.dark .contactMe .form .btn.outline {
+  border-color: rgb(171, 171, 171);
+  color: rgb(171, 171, 171);
+}
+body.dark .contactMe .form .btn.outline:hover {
+  color: black;
+}
