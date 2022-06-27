@@ -1,0 +1,21 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+.footer .container {
+  padding: 1rem 10px;
+}
+.footer .container .links {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.footer .container .links .link a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer .container .copyright {
+  text-align: right;
+  opacity: 0.5;
+}

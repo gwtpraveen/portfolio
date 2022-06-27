@@ -1,0 +1,27 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+
+    .container {
+        padding: 1rem 10px;
+
+        .links {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            .link {
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .copyright {
+            text-align: right;
+            opacity: .5;
+        }
+    }
+}
