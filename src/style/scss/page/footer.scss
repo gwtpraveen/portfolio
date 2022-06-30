@@ -1,27 +1,23 @@
 .footer {
-    background-color: #000;
-    color: #fff;
-
+    margin-top: 4rem;
     .container {
         padding: 1rem 10px;
-
-        .links {
-            list-style-type: none;
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 2rem;
-
-            .link {
-                a {
-                    color: #fff;
-                    text-decoration: none;
-                }
-            }
-        }
+        max-width: 1440px;
+        margin: auto;
 
         .copyright {
             text-align: right;
             opacity: .5;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .footer {
+        .container {
+            .copyright {
+                text-align: center;
+            }
         }
     }
 }

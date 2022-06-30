@@ -2,6 +2,7 @@ import BounceLetter from "../../common/BounceLetter";
 import Navigation from "../Navigation";
 import "../../../style/css/page/homepage/heroSection.css";
 import "../../../style/css/utils/buttons.css";
+import canvasAnimation from "../canvasAnimation";
 import { useRef, useEffect } from "react";
 
 const HeroSection = (props) => {
@@ -11,7 +12,7 @@ const HeroSection = (props) => {
     };
 
     useEffect(() => {
-        
+        // canvasAnimation();
     })
 
     return (

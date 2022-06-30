@@ -5,7 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 1080px;
   position: relative;
   overflow-x: hidden;
 }
