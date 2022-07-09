@@ -2,14 +2,12 @@
 
 .contactMe {
     max-width: 1440px;
-    margin: 2rem auto 1rem;
+    margin: 4rem auto 1rem;
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    max-height: 1080px;
     position: relative;
 
     .waterMark {

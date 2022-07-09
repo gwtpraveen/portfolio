@@ -26,7 +26,9 @@ const HeroSection = (props) => {
                 </h1>
                 <p className="discription">Junior Front End Developer</p>
                 <button className="btn">Check My Work</button>
-                <button className="theme-switch" onClick={handleTheme} title="theme Switch">D</button>
+                <button className="theme-switch" onClick={handleTheme} title="theme Switch">
+                    <i className="fa-solid fa-circle-half-stroke"></i>
+                </button>
             </div>
             <canvas id="canvas" className="canvas" ref={canvasEle}></canvas>
         </section>

@@ -10,7 +10,13 @@ const MyWorkSection = (props) => {
             <div className="showcase-div">
                 <div className="row">
                     <div className="thumbnail thumbnail-right">
-                        <img src="https://via.placeholder.com/600x400" alt="" className="img"/>
+                        <img src="./images/urlshorten.jpg" alt="" className="img"/>
+                        <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-link" title="code">
+                            <i className="fa-solid fa-code"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-link" title="live">
+                            <i className="fa-solid fa-desktop"></i>
+                        </a>
                     </div>
                     <div className="details">
                         <p className="details-title">Title</p>
@@ -33,12 +39,24 @@ const MyWorkSection = (props) => {
                         </ul>
                     </div>
                     <div className="thumbnail">
-                        <img src="https://via.placeholder.com/600x400" alt="" className="img"/>
+                        <img src="./images/countryapi.jpg" alt="" className="img"/>
+                        <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-link" title="code">
+                            <i className="fa-solid fa-code"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-link" title="live">
+                            <i className="fa-solid fa-desktop"></i>
+                        </a>
                     </div>
                 </div>
                 <div className="row">
                     <div className="thumbnail thumbnail-right">
-                        <img src="https://via.placeholder.com/600x400" alt="" className="img"/>
+                        <img src="./images/spacetourism.jpg" alt="" className="img"/>
+                        <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-link" title="code">
+                            <i className="fa-solid fa-code"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-link" title="live">
+                            <i className="fa-solid fa-desktop"></i>
+                        </a>
                     </div>
                     <div className="details">
                         <p className="details-title">Title</p>
@@ -61,7 +79,13 @@ const MyWorkSection = (props) => {
                         </ul>
                     </div>
                     <div className="thumbnail">
-                        <img src="https://via.placeholder.com/600x400" alt="" className="img"/>
+                        <img src="./images/netflix.jpg" alt="" className="img"/>
+                        <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-link" title="code">
+                            <i className="fa-solid fa-code"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-link" title="live">
+                            <i className="fa-solid fa-desktop"></i>
+                        </a>
                     </div>
                 </div>
             </div>

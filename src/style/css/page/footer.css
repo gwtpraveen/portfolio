@@ -1,14 +1,30 @@
 .footer {
   margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 .footer .container {
   padding: 1rem 10px;
   max-width: 1440px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
 }
 .footer .container .copyright {
   text-align: right;
   opacity: 0.5;
+}
+.footer .container .toTop {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
