@@ -113,6 +113,7 @@
   }
   .contactMe .map-container {
     margin-top: 2rem;
+    height: 50vh;
   }
 }
 body.dark .contactMe .form .input-group::after {
@@ -127,7 +128,6 @@ body.dark .contactMe .form .input-group .input::placeholder, body.dark .contactM
 }
 body.dark .contactMe .form .btn.outline {
   border-color: rgb(171, 171, 171);
-  color: rgb(171, 171, 171);
 }
 body.dark .contactMe .form .btn.outline:hover {
   color: black;

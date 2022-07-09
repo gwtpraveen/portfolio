@@ -133,6 +133,7 @@
 
         .map-container {
             margin-top: 2rem;
+            height: 50vh;
         }
     }
 }
@@ -157,7 +158,6 @@ body.dark {
 
             .btn.outline {
                 border-color: rgb(171, 171, 171);
-                color: rgb(171, 171, 171);
 
                 &:hover {
                     color: black;

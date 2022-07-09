@@ -145,6 +145,13 @@
   margin-right: 1.5rem;
 }
 
+body.dark .myWorkSection .showcase-div .row .thumbnail::after {
+  background-color: rgba(0, 0, 0, 0.418);
+}
+body.dark .myWorkSection .showcase-div .row .thumbnail:hover::after {
+  background-color: rgba(0, 0, 0, 0.144);
+}
+
 @media (max-width: 800px) {
   .myWorkSection {
     max-width: 500px;
