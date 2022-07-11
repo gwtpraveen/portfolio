@@ -152,6 +152,12 @@ body.dark .myWorkSection .showcase-div .row .thumbnail:hover::after {
   background-color: rgba(0, 0, 0, 0.144);
 }
 
+@media (max-width: 1100px) {
+  .myWorkSection .showcase-div .row .thumbnail .link {
+    width: 50px;
+    height: 50px;
+  }
+}
 @media (max-width: 800px) {
   .myWorkSection {
     max-width: 500px;

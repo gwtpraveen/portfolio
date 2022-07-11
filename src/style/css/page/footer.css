@@ -27,8 +27,11 @@
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
-  .footer .container .copyright {
-    text-align: center;
+@media (max-width: 450px) {
+  .footer .container {
+    justify-content: center;
+  }
+  .footer .container .toTop {
+    display: none;
   }
 }

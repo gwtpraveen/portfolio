@@ -29,11 +29,12 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 450px) {
     .footer {
         .container {
-            .copyright {
-                text-align: center;
+            justify-content: center;
+            .toTop {
+                display: none;
             }
         }
     }
