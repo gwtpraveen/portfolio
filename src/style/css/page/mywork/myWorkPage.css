@@ -1,1 +1,137 @@
-
+.mywork {
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 2rem;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 1.1rem;
+}
+.mywork .h1 {
+  font-size: 3rem;
+  cursor: pointer;
+  position: relative;
+}
+.mywork .h1::after {
+  content: "#";
+  margin-left: 1rem;
+  color: black;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  position: absolute;
+}
+.mywork .h1:hover::after {
+  opacity: 1;
+}
+.mywork .discription {
+  margin: 2rem 0;
+}
+.mywork .col .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.mywork .col .row .thumbnail {
+  position: relative;
+  width: 100%;
+}
+.mywork .col .row .thumbnail .img {
+  width: 100%;
+}
+.mywork .col .row .thumbnail-right {
+  justify-self: flex-end;
+}
+.mywork .col .row .thumbnail::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  inset: 0;
+  transition: 500ms ease-in-out;
+}
+.mywork .col .row .thumbnail:hover::after {
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.mywork .col .row .thumbnail:hover .link {
+  opacity: 1;
+}
+.mywork .col .row .thumbnail .link {
+  width: 75px;
+  height: 75px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  z-index: 2;
+  color: #000;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out 200ms, 500ms ease;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.mywork .col .row .thumbnail .link:hover {
+  background-color: rgb(224, 224, 224);
+}
+.mywork .col .row .thumbnail .code-link {
+  left: 35%;
+}
+.mywork .col .row .thumbnail .live-link {
+  right: 35%;
+}
+.mywork .col .row .details {
+  width: 80%;
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+}
+.mywork .col .row .details-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.mywork .col .row .details-title::after {
+  content: "#";
+  margin-left: 0.5rem;
+  color: black;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.mywork .col .row .details-title:hover::after {
+  opacity: 1;
+}
+.mywork .col .row .details-discription {
+  margin: 1rem 0;
+}
+.mywork .col .row .details-ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.8rem;
+  font-size: 1.1rem;
+}
+.mywork .col .row .details-ul_li {
+  position: relative;
+  cursor: pointer;
+}
+.mywork .col .row .details-ul_li::after, .mywork .col .row .details-ul_li::before {
+  position: absolute;
+  opacity: 0;
+  transition: 400ms ease;
+}
+.mywork .col .row .details-ul_li::after {
+  content: "/>";
+  left: 105%;
+}
+.mywork .col .row .details-ul_li::before {
+  content: "<";
+  right: 105%;
+}
+.mywork .col .row .details-ul_li:hover::after, .mywork .col .row .details-ul_li:hover::before {
+  opacity: 1;
+  font-weight: bold;
+}
+.mywork .col .row .details-left {
+  justify-self: flex-end;
+  margin-right: 1.5rem;
+}

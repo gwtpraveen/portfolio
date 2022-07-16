@@ -9,14 +9,16 @@ import MyWorkPage from './components/pages/mywork/MyWorkPage';
 
 function App() {
   return (
-    <div className="container">
-      {/* <HeroSection/>
-      <MyWorkSection/>
-      <AboutMe/>
-      <ContactMe/>
-      <Footer/> */}
+    <>
+      <div className="container">
+        {/* <HeroSection/>
+        <MyWorkSection/>
+        <AboutMe/>
+        <ContactMe/>
+        <Footer/> */}
+      </div>
       <MyWorkPage/>
-    </div>
+    </>
   );
 }
 

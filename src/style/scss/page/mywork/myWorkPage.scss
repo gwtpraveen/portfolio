@@ -1,0 +1,166 @@
+@use "../../global/colors" as *;
+
+.mywork {
+    max-width: 1440px;
+    margin:  auto;
+    padding-top: 2rem;
+    position: relative;
+    overflow-x: hidden;
+    font-size: 1.1rem;
+    
+    .h1 {
+        font-size: 3rem;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: "#";
+            margin-left: 1rem;
+            color: $color-accent;
+            opacity: 0;
+            transition: opacity 500ms ease;
+            position: absolute;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+
+    .discription {
+        margin: 2rem 0;
+    }
+
+    .col {
+         .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            margin: 1.5rem 0;
+
+            .thumbnail {
+                position: relative;
+                width: 100%;
+                .img {
+                    width: 100%;
+                }
+
+                &-right {
+                    justify-self: flex-end;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: transparent;
+                    inset: 0;
+                    transition: 500ms ease-in-out;
+                }
+
+                &:hover::after {
+                    background-color: rgba(0, 0, 0, 0.507);
+                }
+
+                &:hover .link {
+                    opacity: 1;
+                }
+
+                .link {
+                    width: 75px;
+                    height: 75px;
+                    background-color: rgb(255, 255, 255);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    z-index: 2;
+                    color: #000;
+                    opacity: 0;
+                    transition: opacity 300ms ease-in-out 200ms, 500ms ease;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    
+                    &:hover {
+                        background-color: rgb(224, 224, 224);
+                    }
+                }
+
+                .code-link {
+                    left: 35%;
+                }
+
+                .live-link {
+                    right: 35%;
+                }
+            }
+
+            .details {
+                width: 80%;
+                margin-left: 1.5rem;
+                font-size: 1.2rem;
+
+                &-title {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                    &::after {
+                        content: "#";
+                        margin-left: .5rem;
+                        color: $color-accent;
+                        opacity: 0;
+                        transition: opacity 500ms ease;
+                    }
+            
+                    &:hover::after {
+                        opacity: 1;
+                    }
+                }
+
+                &-discription {
+                    margin: 1rem 0;
+                }
+
+                &-ul {
+                    list-style-type: none;
+                    display: flex;
+                    gap: 1.8rem;
+                    font-size: 1.1rem;
+
+                    &_li {
+                        position: relative;
+                        cursor: pointer;
+                        &::after, &::before {
+                            position: absolute;
+                            opacity: 0;
+                            transition: 400ms ease;
+                        }
+
+                        &::after {
+                            content: "/>";
+                            left: 105%;
+                        }
+
+                        &::before {
+                            content: "<";
+                            right: 105%;
+                        }
+
+                        &:hover::after, &:hover::before {
+                            opacity: 1;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                &-left {
+                    justify-self: flex-end;
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+}
