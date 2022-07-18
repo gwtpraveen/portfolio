@@ -1,24 +1,15 @@
 import './App.css';
-import HeroSection from './components/pages/homepage/HeroSection';
-import MyWorkSection from './components/pages/homepage/MyWorkSection';
-import AboutMe from './components/pages/homepage/AboutMe';
-import ContactMe from './components/pages/homepage/ContactMe';
-import Footer from './components/pages/Footer';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './components/pages/homepage/HomePage';
 import MyWorkPage from './components/pages/mywork/MyWorkPage';
 
 
 function App() {
   return (
-    <>
-      <div className="container">
-        {/* <HeroSection/>
-        <MyWorkSection/>
-        <AboutMe/>
-        <ContactMe/>
-        <Footer/> */}
-      </div>
-      <MyWorkPage/>
-    </>
+    <Routes>
+      <Route path='/' element={<HomePage/>}/>
+      <Route path='/mywork' element={<MyWorkPage/>}/>
+    </Routes>
   );
 }
 
