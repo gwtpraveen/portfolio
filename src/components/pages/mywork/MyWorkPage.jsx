@@ -5,7 +5,7 @@ import "../../../style/css/page/mywork/myWorkPage.css";
 const MyWorkPage = (props) => {
     return ( 
         <>
-            <div className="mywork">
+            <section className="mywork">
                 <h1 className="h1"><BounceLetter>My</BounceLetter> <BounceLetter>Work</BounceLetter></h1>
                 <p className="discription">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti dolor pariatur aliquam laborum velit accusamus ab, saepe ipsam debitis, impedit quod ullam ut nesciunt alias distinctio possimus minima. Obcaecati, impedit!
@@ -116,7 +116,7 @@ const MyWorkPage = (props) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <Footer/>
         </>
 
