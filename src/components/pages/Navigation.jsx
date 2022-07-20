@@ -1,5 +1,6 @@
 import "../../style/css/page/homepage/navigation.css";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = (props) => {
     const navEl = useRef();
@@ -17,13 +18,13 @@ const Navigation = (props) => {
             </div>
             <ul className="links">
                 <li className="link">
-                    <a href="#mywork">MY WORK</a>
+                    <Link to="/mywork">MY WORK</Link>
                 </li>
                 <li className="link">
-                    <a href="#about">ABOUT ME</a>
+                    <Link to="aboutme">ABOUT ME</Link>
                 </li>
                 <li className="link">
-                    <a href="#contact">CONTACT</a>
+                    <Link to="contact">CONTACT</Link>
                 </li>
             </ul>
         </nav>
