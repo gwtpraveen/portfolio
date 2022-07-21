@@ -1,7 +1,8 @@
 import BounceLetter from "../../common/BounceLetter";
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
-import Footer from "../Footer";
+import SubFooter from "../SubFooter";
+import "../../../style/css/page/contactmePage.css";
 
 
 let YOUR_SERVICE_ID = "service_0g8mmrs";
@@ -37,7 +38,7 @@ const ContactmePage = (props) => {
     };
     return (
         <> 
-         <section className="contactMe" id="contact">
+         <section className="contactMe contaceMePage">
             <div className="contactMe-content">
                 <h2 className="h2"><BounceLetter>Contact</BounceLetter> <BounceLetter>Me</BounceLetter></h2>
                 <p className="discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam, minus quo dolorem itaque omnis distinctio aspernatur rerum eius iste commodi rem veritatis optio ab?</p>
@@ -61,7 +62,7 @@ const ContactmePage = (props) => {
                 <div id="map" className="map"></div>
             </div>
         </section>
-        <Footer/>
+        <SubFooter/>
         </>
      );
 }
