@@ -1,0 +1,39 @@
+.subFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 2rem auto;
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        list-style-type: none;
+
+        .link {
+            a {
+                text-decoration: none;
+                color: #000;   
+
+                &::before {
+                    content: "< ";
+                }
+
+                &::after {
+                    content: " />";
+                }
+
+                &::before, &::after {
+                    opacity: 0;
+                    transition: 400ms ease-in;
+                    font-weight: bolder;
+                }
+
+                &:hover::after, &:hover::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

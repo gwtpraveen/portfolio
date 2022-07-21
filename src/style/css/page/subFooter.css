@@ -1,0 +1,32 @@
+.subFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 2rem auto;
+}
+.subFooter .links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  list-style-type: none;
+}
+.subFooter .links .link a {
+  text-decoration: none;
+  color: #000;
+}
+.subFooter .links .link a::before {
+  content: "< ";
+}
+.subFooter .links .link a::after {
+  content: " />";
+}
+.subFooter .links .link a::before, .subFooter .links .link a::after {
+  opacity: 0;
+  transition: 400ms ease-in;
+  font-weight: bolder;
+}
+.subFooter .links .link a:hover::after, .subFooter .links .link a:hover::before {
+  opacity: 1;
+}
