@@ -50,21 +50,21 @@
             }
 
             &::after {
-                content: "";
-                position: absolute;
-                width: 0%;
-                height: 5px;
-                border-radius: 5px;
-                background-color: rgb(48, 48, 48);
-                top: 150%;
-                left: 50%;
-                transform: translateX(-50%);
-                margin: auto;
-                transition: width 500ms ease;
+                content: " />";
             }
 
-            &:hover::after {
-                width: 100%;
+            &::before {
+                content: "< ";
+            }
+
+            &::before, &::after {
+                opacity: 0;
+                transition: 700ms ease;
+                font-weight: bolder;
+            }
+
+            &:hover::after, &:hover::before {
+                opacity: 1;
             }
         }
     }
