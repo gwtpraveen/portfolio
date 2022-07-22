@@ -1,5 +1,5 @@
 import BounceLetter from "../../common/BounceLetter";
-import Footer from "../Footer";
+import SubFooter from "../SubFooter";
 import "../../../style/css/page/mywork/myWorkPage.css";
 
 const MyWorkPage = (props) => {
@@ -117,7 +117,7 @@ const MyWorkPage = (props) => {
                     </div>
                 </div>
             </section>
-            <Footer/>
+            <SubFooter/>
         </>
 
      );
