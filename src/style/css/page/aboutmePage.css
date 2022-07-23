@@ -1,0 +1,97 @@
+.aboutmePage {
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.aboutmePage .waterMark {
+  position: absolute;
+  font-size: 25rem;
+  font-weight: bolder;
+  opacity: 0.1;
+  z-index: -1;
+  left: 54%;
+  top: 13%;
+}
+.aboutmePage .details .h2 {
+  font-size: 3.5rem;
+  cursor: pointer;
+  position: relative;
+}
+.aboutmePage .details .h2::after {
+  content: "#";
+  margin-left: 1rem;
+  color: black;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  position: absolute;
+}
+.aboutmePage .details .h2:hover::after {
+  opacity: 1;
+}
+.aboutmePage .details-row .whatiuse {
+  margin-top: 2rem;
+  flex-basis: 100%;
+}
+.aboutmePage .details-row .whatiuse h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.aboutmePage .details-row .whatiuse div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.3rem;
+}
+.aboutmePage .details-row .whatiuse div ul {
+  margin-top: 1rem;
+  list-style: none;
+}
+.aboutmePage .details-row .whatiuse div ul li {
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.aboutmePage .details-row .whatiuse div ul li::after {
+  content: " />";
+  opacity: 0;
+  transition: 500ms ease;
+}
+.aboutmePage .details-row .whatiuse div ul li:hover::after {
+  opacity: 1;
+}
+.aboutmePage .details .discription {
+  width: 80%;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+.aboutmePage .details .discription.discription-1 {
+  margin-top: 2rem;
+}
+.aboutmePage .details .h3 {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+.aboutmePage .details .social-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.aboutmePage .details .social-links .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.aboutmePage .details .social-links .social-link:hover {
+  color: red;
+  border-color: red;
+}

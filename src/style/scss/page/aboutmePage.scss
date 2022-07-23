@@ -1,0 +1,121 @@
+@use "../../scss/global/colors" as *;
+
+.aboutmePage {
+        max-width: 1440px;
+    margin:  auto;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+
+    .waterMark {
+        position: absolute;
+        font-size: 25rem;
+        font-weight: bolder;
+        opacity: .1;
+        z-index: -1;
+        left: 54%;
+        top: 13%;
+    }
+
+    .details {
+        .h2 {
+            font-size: 3.5rem;
+            cursor: pointer;
+            position: relative;
+    
+            &::after {
+                content: "#";
+                margin-left: 1rem;
+                color: $color-accent;
+                opacity: 0;
+                transition: opacity 500ms ease;
+                position: absolute;
+            }
+    
+            &:hover::after {
+                opacity: 1;
+            }
+        }
+
+        &-row {
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+
+            .whatiuse {
+                margin-top: 2rem;
+                flex-basis: 100%;
+                h3 {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                }
+
+                div {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    font-size: 1.3rem;
+                    ul {
+                        margin-top: 1rem;
+                        list-style: none;
+
+                        li {
+                            margin-top: .5rem;
+                            cursor: pointer;
+
+                            &::after {
+                                content: " />";
+                                opacity: 0;
+                                transition: 500ms ease;
+                            }
+
+                            &:hover::after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .discription {
+            width: 80%;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+
+            &.discription-1 {
+                margin-top: 2rem;
+            }
+        }
+
+        .h3 {
+            font-size: 1.5rem;
+            margin-top: 5rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            .social-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: black;
+                font-size: 1.3rem;
+                width: 45px;
+                height: 45px;
+                border: 1px solid black;
+                border-radius: 50%;
+
+                &:hover {
+                    color: red;
+                    border-color: red;
+                }
+            }
+        }
+
+    }
+}
