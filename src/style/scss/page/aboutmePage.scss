@@ -117,5 +117,30 @@
             }
         }
 
+        .education {
+            .h3 {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .row {
+                display: flex;
+                margin-bottom: 1.5rem;
+                .details {
+                    .title {
+                        font-size: 1.6rem;
+                    }
+
+                    .discription {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .img {
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+
     }
 }
