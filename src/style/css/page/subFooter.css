@@ -25,11 +25,32 @@
 .subFooter .links .link a::after {
   content: " />";
 }
-.subFooter .links .link a::before, .subFooter .links .link a::after {
+.subFooter .links .link a::after {
   opacity: 0;
   transition: 400ms ease-in;
   font-weight: bolder;
 }
 .subFooter .links .link a:hover::after, .subFooter .links .link a:hover::before {
   opacity: 1;
+}
+
+@media (max-width: 850px) {
+  .subFooter {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .subFooter .copyright {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .subFooter {
+    align-items: flex-start;
+  }
+  .subFooter .links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
