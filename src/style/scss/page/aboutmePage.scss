@@ -98,6 +98,7 @@
             margin-top: 1rem;
             display: flex;
             gap: 1rem;
+            margin-bottom: 2rem;
             .social-link {
                 display: flex;
                 align-items: center;
@@ -142,5 +143,35 @@
             }
         }
 
+    }
+}
+
+@media(max-width: 650px) {
+    .aboutmePage {
+        .details {
+            .discription {
+                width: 100%;
+            }
+
+            .education {
+                .row {
+                    flex-direction: column;
+
+                    .details {
+                        margin-top: 2rem;
+
+                        .discription {
+                            width: 100%;
+                        }
+                    }
+
+                    .img {
+                        max-width: 400px;
+                        margin: 0;
+                    }
+                }
+                    
+            }
+        }
     }
 }

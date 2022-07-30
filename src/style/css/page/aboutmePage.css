@@ -78,6 +78,7 @@
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 .aboutmePage .details .social-links .social-link {
   display: flex;
@@ -111,4 +112,23 @@
 }
 .aboutmePage .details .education .row .img {
   margin-right: 1.5rem;
+}
+
+@media (max-width: 650px) {
+  .aboutmePage .details .discription {
+    width: 100%;
+  }
+  .aboutmePage .details .education .row {
+    flex-direction: column;
+  }
+  .aboutmePage .details .education .row .details {
+    margin-top: 2rem;
+  }
+  .aboutmePage .details .education .row .details .discription {
+    width: 100%;
+  }
+  .aboutmePage .details .education .row .img {
+    max-width: 400px;
+    margin: 0;
+  }
 }
