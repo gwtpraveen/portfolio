@@ -11,12 +11,6 @@ const MyWorkSection = (props) => {
                 <div className="row">
                     <div className="thumbnail thumbnail-right">
                         <img src="./images/urlshorten.jpg" alt="" className="img"/>
-                        <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-link" title="code">
-                            <i className="fa-solid fa-code"></i>
-                        </a>
-                        <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-link" title="live">
-                            <i className="fa-solid fa-desktop"></i>
-                        </a>
                     </div>
                     <div className="details">
                         <p className="details-title">Title</p>
@@ -26,6 +20,10 @@ const MyWorkSection = (props) => {
                             <li className="details-ul_li">CSS</li>
                             <li className="details-ul_li">javaScript</li>
                         </ul>
+                        <div className="links-div">
+                            <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-btn">Visit site</a>
+                            <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-btn">Code</a>
+                        </div>
                     </div>
                 </div>
                 <div className="row img-top">
@@ -37,26 +35,18 @@ const MyWorkSection = (props) => {
                             <li className="details-ul_li">CSS</li>
                             <li className="details-ul_li">javaScript</li>
                         </ul>
+                        <div className="links-div">
+                            <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-btn">Visit site</a>
+                            <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-btn">Code</a>
+                        </div>
                     </div>
                     <div className="thumbnail">
                         <img src="./images/countryapi.jpg" alt="" className="img"/>
-                        <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-link" title="code">
-                            <i className="fa-solid fa-code"></i>
-                        </a>
-                        <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-link" title="live">
-                            <i className="fa-solid fa-desktop"></i>
-                        </a>
                     </div>
                 </div>
                 <div className="row">
                     <div className="thumbnail thumbnail-right">
                         <img src="./images/spacetourism.jpg" alt="" className="img"/>
-                        <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-link" title="code">
-                            <i className="fa-solid fa-code"></i>
-                        </a>
-                        <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-link" title="live">
-                            <i className="fa-solid fa-desktop"></i>
-                        </a>
                     </div>
                     <div className="details">
                         <p className="details-title">Title</p>
@@ -66,6 +56,10 @@ const MyWorkSection = (props) => {
                             <li className="details-ul_li">CSS</li>
                             <li className="details-ul_li">javaScript</li>
                         </ul>
+                        <div className="links-div">
+                            <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-btn">Visit site</a>
+                            <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-btn">Code</a>
+                        </div>
                     </div>
                 </div>
                 <div className="row img-top">
@@ -77,15 +71,13 @@ const MyWorkSection = (props) => {
                             <li className="details-ul_li">CSS</li>
                             <li className="details-ul_li">javaScript</li>
                         </ul>
+                        <div className="links-div">
+                            <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-btn">Visit site</a>
+                            <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-btn">Code</a>
+                        </div>
                     </div>
                     <div className="thumbnail">
                         <img src="./images/netflix.jpg" alt="" className="img"/>
-                        <a href="https://www.github.com" target="_blank" rel="noreferrer" className="link code-link" title="code">
-                            <i className="fa-solid fa-code"></i>
-                        </a>
-                        <a href="https://www.google.com" target="_blank" rel="noreferrer" className="link live-link" title="live">
-                            <i className="fa-solid fa-desktop"></i>
-                        </a>
                     </div>
                 </div>
             </div>

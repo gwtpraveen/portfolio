@@ -57,39 +57,6 @@
   inset: 0;
   transition: 500ms ease-in-out;
 }
-.myWorkSection .showcase-div .row .thumbnail:hover::after {
-  background-color: rgba(0, 0, 0, 0.507);
-}
-.myWorkSection .showcase-div .row .thumbnail:hover .link {
-  opacity: 1;
-}
-.myWorkSection .showcase-div .row .thumbnail .link {
-  width: 75px;
-  height: 75px;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  z-index: 2;
-  color: #000;
-  opacity: 0;
-  transition: opacity 300ms ease-in-out 200ms, 500ms ease;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-.myWorkSection .showcase-div .row .thumbnail .link:hover {
-  background-color: rgb(224, 224, 224);
-}
-.myWorkSection .showcase-div .row .thumbnail .code-link {
-  left: 35%;
-}
-.myWorkSection .showcase-div .row .thumbnail .live-link {
-  right: 35%;
-}
 .myWorkSection .showcase-div .row .details {
   width: 80%;
   margin-left: 1.5rem;
@@ -140,24 +107,31 @@
   opacity: 1;
   font-weight: bold;
 }
+.myWorkSection .showcase-div .row .details .links-div {
+  margin-top: 2.5rem;
+}
+.myWorkSection .showcase-div .row .details .links-div .link {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  transition: 300ms ease-in-out;
+}
+.myWorkSection .showcase-div .row .details .links-div .link:hover {
+  border-radius: 10px;
+}
+.myWorkSection .showcase-div .row .details .links-div .live-btn {
+  margin-right: 1rem;
+  background-color: red;
+}
+.myWorkSection .showcase-div .row .details .links-div .code-btn {
+  border: 2px solid red;
+}
 .myWorkSection .showcase-div .row .details-left {
   justify-self: flex-end;
   margin-right: 1.5rem;
 }
 
-body.dark .myWorkSection .showcase-div .row .thumbnail::after {
-  background-color: rgba(0, 0, 0, 0.418);
-}
-body.dark .myWorkSection .showcase-div .row .thumbnail:hover::after {
-  background-color: rgba(0, 0, 0, 0.144);
-}
-
-@media (max-width: 1100px) {
-  .myWorkSection .showcase-div .row .thumbnail .link {
-    width: 50px;
-    height: 50px;
-  }
-}
 @media (max-width: 800px) {
   .myWorkSection {
     max-width: 500px;
