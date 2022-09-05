@@ -11,8 +11,8 @@ const AboutMe = (props) => {
         <h2 className="h2"><BounceLetter>About</BounceLetter> <BounceLetter>Me</BounceLetter></h2>
         <div className="details-row">
           <div>
-            <p className="discription-1 discription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error consequatur deleniti aliquam mollitia ipsum dolorum quas earum fuga libero magni!</p>
-            <p className="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni illo, et exercitationem ipsam recusandae aliquid cum voluptate placeat ducimus.</p>
+            <p className="discription-1 discription">I'm Thamindu Praveen, a front-end developer located in Sri Lanka.<br/><br/>My interest in learning web development began after I completed my Advanced Level in Mathematics. I immediately fell in love with it, so I decided to make this my career.</p>
+            <p className="discription">Since then, I've been working on a fair amount of enjoyable projects to show off my proficiency with various technologies. </p>
           </div>
           <div className="whatiuse">
             <h3>Here are a few tools & technologies I've  been working with</h3>
@@ -40,11 +40,11 @@ const AboutMe = (props) => {
 
         <h3 className="h3">Getting touch with me</h3>
         <div className="social-links">
-          <a href="" className="social-link"><i className="fa-brands fa-linkedin"></i></a>
-          <a href="" className="social-link"><i className="fa-brands fa-github"></i></a>
-          <a href="" className="social-link"><i className="fa-brands fa-codepen"></i></a>
-          <a href="" className="social-link"><i className="fa-brands fa-twitter"></i></a>
-          <a href="https://www.facebook.com/people/Thamindu-Praveen/100082742764466/" className="social-link"><i className="fa-brands fa-facebook-f"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/thamindu-praveen-41891b229/" className="social-link"><i className="fa-brands fa-linkedin"></i></a>
+          <a target="_blank" href="https://github.com/gwtpraveen" className="social-link"><i className="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://codepen.io/gwtpraveent" className="social-link"><i className="fa-brands fa-codepen"></i></a>
+          <a target="_blank" href="https://twitter.com/gwtPraveen" className="social-link"><i className="fa-brands fa-twitter"></i></a>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100085354600653" className="social-link"><i className="fa-brands fa-facebook-f"></i></a>
         </div>
       </div>
     </section>

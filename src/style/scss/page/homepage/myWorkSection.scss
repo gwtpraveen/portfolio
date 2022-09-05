@@ -161,20 +161,6 @@
     }
 }
 
-// body.dark {
-//     .myWorkSection {
-//         .showcase-div {
-//             .row {
-//                 .thumbnail {
-//                     &::after {
-//                         background-color: rgba(0, 0, 0, 0.144);
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
 @media (max-width: 800px) {
     .myWorkSection {
         max-width: 500px;

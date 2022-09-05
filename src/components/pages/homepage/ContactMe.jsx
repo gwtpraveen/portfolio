@@ -41,7 +41,7 @@ const ContactMe = (props) => {
             <p className="waterMark">Contact</p>
             <div className="contactMe-content">
                 <h2 className="h2"><BounceLetter>Contact</BounceLetter> <BounceLetter>Me</BounceLetter></h2>
-                <p className="discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam, minus quo dolorem itaque omnis distinctio aspernatur rerum eius iste commodi rem veritatis optio ab?</p>
+                <p className="discription">I'm looking for freelance or remote opportunities. However, if you have any additional requests or questions, please use the form.</p>
                 <form className="form" method="post" ref={form} onSubmit={(e) => handleSubmit(e, YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY)}>
                     <div className="input-group">
                         <input type="text" name="name" id="name" className="input" placeholder="Name" onFocus={handleFocus} onBlur={handleBlur} autoComplete="off"/>
