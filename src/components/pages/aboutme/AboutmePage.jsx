@@ -10,8 +10,8 @@ const AboutmePage = (props) => {
                     <h2 className="h2"><BounceLetter>About</BounceLetter> <BounceLetter>Me</BounceLetter></h2>
                     <div className="details-row">
                     <div>
-                        <p className="discription-1 discription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error consequatur deleniti aliquam mollitia ipsum dolorum quas earum fuga libero magni!</p>
-                        <p className="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni illo, et exercitationem ipsam recusandae aliquid cum voluptate placeat ducimus.</p>
+                        <p className="discription-1 discription">I'm Thamindu Praveen, a front-end developer located in Sri Lanka.<br/><br/>My interest in learning web development began after I completed my Advanced Level in Mathematics. I immediately fell in love with it, so I decided to make this my career.</p>
+                        <p className="discription">Since then, I've been working on a fair amount of enjoyable projects to show off my proficiency with various technologies. </p>
                     </div>
                     <div className="whatiuse">
                         <h3>Here are a few tools & technologies I've  been working with</h3>
@@ -37,29 +37,29 @@ const AboutmePage = (props) => {
                     </div>
 
                     <div className="education">
-                        <h3 className="h3">Education</h3>
+                        <h3 className="h3">Licenses & certifications</h3>
                         <div className="row">
                             <img src="https://via.placeholder.com/300x200" alt="" className="img"/>
                             <div className="details">
-                                <p className="title">title</p>
-                                <p className="discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, minus.</p>
-                                <p className="provider">owner</p>
+                                <p className="title">CS50: Introduction to Computer Science</p>
+                                <p className="discription">An introduction to the intellectual enterprises of computer science and the art of programming.</p>
+                                <p className="provider">Harvard University</p>
                             </div>
                         </div>
                         <div className="row">
                             <img src="https://via.placeholder.com/300x200" alt="" className="img"/>
                             <div className="details">
-                                <p className="title">title</p>
-                                <p className="discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, minus.</p>
-                                <p className="provider">owner</p>
+                                <p className="title">CS50: Understanding Technology</p>
+                                <p className="discription">This is CS50’s introduction to technology for students who don’t (yet!) consider themselves computer persons.</p>
+                                <p className="provider">Harvard University</p>
                             </div>
                         </div>
                         <div className="row">
                             <img src="https://via.placeholder.com/300x200" alt="" className="img"/>
                             <div className="details">
-                                <p className="title">title</p>
-                                <p className="discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, minus.</p>
-                                <p className="provider">owner</p>
+                                <p className="title">Responsive Web Design</p>
+                                <p className="discription">In this Responsive Web Design Certification, you'll learn the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design.</p>
+                                <p className="provider">FreeCodeCamp</p>
                             </div>
                         </div>
                     </div>

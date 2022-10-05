@@ -8,7 +8,7 @@ const MyWorkPage = (props) => {
             <section className="mywork">
                 <h1 className="h1"><BounceLetter>My</BounceLetter> <BounceLetter>Work</BounceLetter></h1>
                 <p className="discription">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti dolor pariatur aliquam laborum velit accusamus ab, saepe ipsam debitis, impedit quod ullam ut nesciunt alias distinctio possimus minima. Obcaecati, impedit!
+                I have spent a lot of time on different projects. I love doing everything from scratch. Here are some of my favorite ones which sum up my knowledge. I have done many small projects from different courses and challenges to learn the basics. You can check them on my <a href="https://www.github.com/gwtpraveen" target="_blank">Github</a>.
                 </p>
                 <div className="col">
                     <div className="row">
@@ -17,7 +17,7 @@ const MyWorkPage = (props) => {
                         </div>
                         <div className="details">
                             <p className="details-title">Shortly URL Shortening Site</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">This project is a fictitious URL shortening service provided by a company called shortly. It stores your shorted URLs and uses local storage to save them. It uses third-party APIs to shorten URLs.</p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">SCSS</li>
@@ -37,7 +37,7 @@ const MyWorkPage = (props) => {
                         </div>
                         <div className="details">
                             <p className="details-title">Static Job Listing</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">This is a static job listing site made with React and uses a JSON file to fetch all job data. A user can filter jobs via tags like "frontend jobs", "javascritp", "python" and so on. Newly listed jobs got a new badge, and featured jobs got a feature badge.</p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">SCSS</li>
@@ -57,7 +57,7 @@ const MyWorkPage = (props) => {
                         </div>
                         <div className="details">
                             <p className="details-title">Space Tourism Website</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">Space Tourism is a multi-page website built with vanilla JavaScript, CSS, and HTML. It uses Javascript to fetch data and generate HTML with that data. The project was created as part of the front-end mentor challenge.</p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">SCSS</li>
@@ -76,7 +76,7 @@ const MyWorkPage = (props) => {
                         </div>
                         <div className="details">
                             <p className="details-title">Netflix Clone</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">The Netflix clone is made with vanilla javascript, CSS, and HTML. It aims to show how meticulous I am with details.</p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">CSS</li>
@@ -95,7 +95,7 @@ const MyWorkPage = (props) => {
                         </div>
                         <div className="details">
                             <p className="details-title">Country API</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">Country api is a project made with thrid party API. You can view the list of all countries and find a specific one via search or by filtering regions. By navigating to the individual country page, you are able to see more details about the country.</p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">CSS</li>
@@ -116,7 +116,8 @@ const MyWorkPage = (props) => {
                         </div>
                         <div className="details">
                             <p className="details-title">Advice Generator App</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">Using third-party APIs, the advice app generates random advice.
+By pressing the button, the user can view other advice.</p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">CSS</li>
@@ -135,7 +136,7 @@ const MyWorkPage = (props) => {
                         </div>
                         <div className="details">
                             <p className="details-title">LoopStudios Landing Page</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">Website for the innovative company Loopstudio, which offers virtual experiences. built as part of frontend mentor challenge.</p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">CSS</li>
@@ -153,7 +154,7 @@ const MyWorkPage = (props) => {
                         </div>
                         <div className="details">
                             <p className="details-title">Todo APP</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">Advanced ToDo app created using React. The user has the ability to add, delete, and mark tasks as finished. The user has the option to filter tasks and rearrange them using drag and drop. </p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">SCSS</li>
@@ -167,29 +168,11 @@ const MyWorkPage = (props) => {
                     </div>
                     <div className="row">
                         <div className="thumbnail">
-                            <img src="./images/easybank.jpg" alt="" className="img"/>
-                        </div>
-                        <div className="details">
-                            <p className="details-title">EasyBank Landing Page</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
-                            <ul className="details-ul">
-                                <li className="details-ul_li">HTML</li>
-                                <li className="details-ul_li">SCSS</li>
-                                <li className="details-ul_li">javaScript</li>
-                            </ul>
-                            <div className="links-div">
-                                <a href="https://easybanklandingpag.netlify.app/" target="_blank" rel="noreferrer" className="link live-btn">Visit site</a>
-                                <a href="https://github.com/gwtpraveen/easybank-landing-page" target="_blank" rel="noreferrer" className="link code-btn">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="thumbnail">
                             <img src="./images/huddlelandingpage.jpg" alt="" className="img"/>
                         </div>
                         <div className="details">
                             <p className="details-title">Huddle Landing Page</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">landing page built as part of frontend mentor challenge.</p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">SCSS</li>
@@ -207,7 +190,8 @@ const MyWorkPage = (props) => {
                         </div>
                         <div className="details">
                             <p className="details-title">Interactive Comment Section</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">Users of the interactive comment section can post messages, respond to previously posted messages, and vote up or down on remarks.
+It was created using react, and the data is kept in local storage.</p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">CSS</li>
@@ -226,7 +210,7 @@ const MyWorkPage = (props) => {
                         </div>
                         <div className="details">
                             <p className="details-title">Tip Calculator</p>
-                            <p className="details-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore, distinctio fugit molestiae rerum reiciendis commodi officia impedit error repudiandae molestias labore minima amet. Sunt?</p>
+                            <p className="details-discription">Tip calculator help your with your bills. It makes it easier to add your tip and even divide the bill and tip among your friends.</p>
                             <ul className="details-ul">
                                 <li className="details-ul_li">HTML</li>
                                 <li className="details-ul_li">CSS</li>
