@@ -198,3 +198,22 @@
         }
     }
 }
+
+body.dark {
+    .myWorkSection {
+        a {
+            color: #fff;
+        }
+        .showcase-div {
+            .row {
+                .details {
+                    .links-div {
+                        .link {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

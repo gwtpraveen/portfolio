@@ -104,6 +104,3 @@
 body.dark .nav .links .link a {
   color: #fff;
 }
-body.dark .nav .links .link::after {
-  background-color: #fff;
-}

@@ -110,6 +110,21 @@
 .aboutmePage .details .education .row .details .discription {
   font-size: 1.2rem;
 }
+.aboutmePage .details .education .row .details .provider {
+  margin: 0.5rem 0 1rem;
+}
+.aboutmePage .details .education .row .details .button {
+  text-decoration: none;
+  color: #000;
+  border: 2px solid red;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  transition: 250ms ease-in;
+}
+.aboutmePage .details .education .row .details .button:hover {
+  background-color: red;
+  color: #fff;
+}
 .aboutmePage .details .education .row .img {
   margin-right: 1.5rem;
 }

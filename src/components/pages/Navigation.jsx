@@ -8,6 +8,13 @@ const Navigation = (props) => {
         navEl.current.classList.toggle("active");
     };
 
+    const handleToTop = () => {
+        window.scrollTo({
+        top: 0, 
+        behavior: 'smooth'
+    });
+}
+
     return ( 
         <nav className="nav" ref={navEl}>
             <img src="" alt="logo" className="logo"/>
@@ -18,7 +25,7 @@ const Navigation = (props) => {
             </div>
             <ul className="links">
                 <li className="link">
-                    <Link to="/mywork">MY WORK</Link>
+                    <Link to="/mywork" onClick={handleToTop}>MY WORK</Link>
                 </li>
                 <li className="link">
                     <Link to="aboutme">ABOUT ME</Link>

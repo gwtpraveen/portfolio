@@ -162,3 +162,9 @@
     order: 1;
   }
 }
+body.dark .myWorkSection a {
+  color: #fff;
+}
+body.dark .myWorkSection .showcase-div .row .details .links-div .link {
+  color: #fff;
+}

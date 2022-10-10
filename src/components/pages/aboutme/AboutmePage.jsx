@@ -39,27 +39,30 @@ const AboutmePage = (props) => {
                     <div className="education">
                         <h3 className="h3">Licenses & certifications</h3>
                         <div className="row">
-                            <img src="https://via.placeholder.com/300x200" alt="" className="img"/>
+                            <img src="./images/harvard.jpg" alt="" className="img"/>
                             <div className="details">
                                 <p className="title">CS50: Introduction to Computer Science</p>
                                 <p className="discription">An introduction to the intellectual enterprises of computer science and the art of programming.</p>
                                 <p className="provider">Harvard University</p>
+                                <a href="https://certificates.cs50.io/199e4b84-2f86-4bc4-ba26-4f85749c9184.pdf?size=letter" className="button">Show Crediential</a>
                             </div>
                         </div>
                         <div className="row">
-                            <img src="https://via.placeholder.com/300x200" alt="" className="img"/>
+                            <img src="./images/harvard.jpg" alt="" className="img"/>
                             <div className="details">
                                 <p className="title">CS50: Understanding Technology</p>
                                 <p className="discription">This is CS50’s introduction to technology for students who don’t (yet!) consider themselves computer persons.</p>
                                 <p className="provider">Harvard University</p>
+                                <a href="https://certificates.cs50.io/caa9261b-b17d-47a9-9875-bb76e51f4bd4.pdf?size=letter" className="button">Show Crediential</a>
                             </div>
                         </div>
                         <div className="row">
-                            <img src="https://via.placeholder.com/300x200" alt="" className="img"/>
+                            <img src="./images/freecodecamp.jpg" alt="" className="img"/>
                             <div className="details">
                                 <p className="title">Responsive Web Design</p>
                                 <p className="discription">In this Responsive Web Design Certification, you'll learn the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design.</p>
                                 <p className="provider">FreeCodeCamp</p>
+                                <a href="https://freecodecamp.org/certification/Praveen_TGW/responsive-web-design" className="button">Show Crediential</a>
                             </div>
                         </div>
                     </div>

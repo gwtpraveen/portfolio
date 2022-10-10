@@ -24,6 +24,15 @@
             margin: 1rem 0 2rem;
         }
 
+        .btn {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
         .theme-switch {
             position: absolute;
             right: 0rem;
@@ -100,6 +109,10 @@ body.dark {
             .theme-switch {
                 background-color: #fff;
                 color: #000;
+            }
+
+            .btn {
+                color: #fff;
             }
         }
     }

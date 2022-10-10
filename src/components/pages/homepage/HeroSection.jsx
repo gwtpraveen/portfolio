@@ -25,7 +25,7 @@ const HeroSection = (props) => {
                     <BounceLetter>Web</BounceLetter> <BounceLetter>Developer.</BounceLetter>
                 </h1>
                 <p className="discription">Junior Front End Developer</p>
-                <button className="btn">Check My Work</button>
+                <a className="btn" href="#mywork">Check My Work</a>
                 <button className="theme-switch" onClick={handleTheme} title="theme Switch">
                     <i className="fa-solid fa-circle-half-stroke"></i>
                 </button>
