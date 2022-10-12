@@ -33,6 +33,7 @@
                 opacity: 0;
                 transition: opacity 500ms ease;
                 position: absolute;
+                color: $color-main;
             }
     
             &:hover::after {
@@ -68,6 +69,8 @@
                                 content: " />";
                                 opacity: 0;
                                 transition: 500ms ease;
+                                color: $color-main;
+                                font-weight: bold;
                             }
 
                             &:hover::after {
@@ -109,10 +112,11 @@
                 height: 45px;
                 border: 1px solid black;
                 border-radius: 50%;
+                transition: 250ms ease-in;
 
                 &:hover {
-                    color: red;
-                    border-color: red;
+                    color: $color-main;
+                    border-color: $color-main;
                 }
             }
         }
@@ -155,8 +159,8 @@ body.dark {
                     border-color: #fff;
 
                     &:hover {
-                        color: red;
-                        border-color: red;
+                        color: $color-main;
+                        border-color: $color-main;
                     }
                 }
             }

@@ -22,10 +22,15 @@
 }
 .hero-section .content-div .btn {
   text-decoration: none;
-  color: #000;
+  color: #3466aa;
+  transition: 250ms ease-in;
+  border-color: #3466aa;
+  background-color: #3466aa;
+  color: #fff;
 }
 .hero-section .content-div .btn:hover {
-  color: #fff;
+  background-color: transparent;
+  color: #3466aa;
 }
 .hero-section .content-div .theme-switch {
   position: absolute;
@@ -83,4 +88,8 @@ body.dark .hero-section .content-div .theme-switch {
 }
 body.dark .hero-section .content-div .btn {
   color: #fff;
+}
+body.dark .hero-section .content-div .btn:hover {
+  background-color: transparent;
+  border-color: #3466aa;
 }

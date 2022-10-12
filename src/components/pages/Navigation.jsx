@@ -31,7 +31,8 @@ const Navigation = (props) => {
                     <Link to="aboutme">ABOUT ME</Link>
                 </li>
                 <li className="link">
-                    <Link to="contact">CONTACT</Link>
+                    {/* <Link to="#mywork">CONTACT</Link> */}
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </nav>

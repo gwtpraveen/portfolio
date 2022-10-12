@@ -13,10 +13,9 @@ const SubFooter = (props) => {
             <ul className="links">
                 <li className="link"><Link to="/" onClick={handleToTop}>HOME</Link></li>
                 <li className="link"><Link to="/mywork" onClick={handleToTop}>MY WORK</Link></li>
-                <li className="link"><Link to="/contact" onClick={handleToTop}>CONTACT ME</Link></li>
                 <li className="link"><Link to="/aboutme" onClick={handleToTop}>ABOUT ME</Link></li>
             </ul>
-             <p className="copyright">Design + build by Thamindu Praveen ⓒ2022</p>
+             <p className="copyright">Design + build by Thamindu Praveen ⓒ 2022</p>
         </footer>
      );
 }

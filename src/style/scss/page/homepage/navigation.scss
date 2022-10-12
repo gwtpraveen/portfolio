@@ -1,3 +1,5 @@
+@use "../../global/colors" as *;
+
 .nav {
     display: flex;
     align-items: center;
@@ -51,6 +53,7 @@
 
             &::after {
                 content: " />";
+                color: $color-main;
             }
 
             &::before {

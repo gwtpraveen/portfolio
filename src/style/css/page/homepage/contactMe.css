@@ -36,6 +36,7 @@
   opacity: 0;
   transition: opacity 500ms ease;
   position: absolute;
+  color: #3466aa;
 }
 .contactMe .h2:hover::after {
   opacity: 1;
@@ -51,7 +52,7 @@
   content: "";
   height: 5px;
   width: 0%;
-  background-color: black;
+  background-color: #3466aa;
   position: absolute;
   left: 0;
   top: 100%;
@@ -82,12 +83,18 @@
 }
 .contactMe .form .btn.outline {
   border-width: 1px;
+  border-color: #3466aa;
+  background-color: transparent;
+}
+.contactMe .form .btn:hover {
+  background-color: #3466aa;
+  color: #fff;
 }
 .contactMe .map-container {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: red;
+  background-color: #3466aa;
 }
 .contactMe .map-container .map {
   width: 100%;
@@ -117,7 +124,7 @@
   }
 }
 body.dark .contactMe .form .input-group::after {
-  background-color: #fff;
+  background-color: #3466aa;
 }
 body.dark .contactMe .form .input-group .input, body.dark .contactMe .form .input-group textarea {
   background-color: rgb(74, 74, 74);
@@ -130,5 +137,5 @@ body.dark .contactMe .form .btn.outline {
   border-color: rgb(171, 171, 171);
 }
 body.dark .contactMe .form .btn.outline:hover {
-  color: black;
+  color: #fff;
 }

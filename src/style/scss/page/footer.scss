@@ -1,3 +1,5 @@
+@use "../global/colors" as *;
+
 .footer {
     margin-top: 4rem;
     margin-bottom: 1rem;
@@ -25,6 +27,12 @@
             border-radius: 50%;
             border: none;
             cursor: pointer;
+            transition: 250ms ease-in;
+
+            &:hover {
+                background-color: $color-main;
+                color: #fff;
+            }
         }
     }
 }

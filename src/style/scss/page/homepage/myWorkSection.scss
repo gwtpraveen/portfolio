@@ -7,6 +7,11 @@
     position: relative;
     overflow-x: hidden;
 
+    a {
+        color: $color-main;
+        text-decoration: none;
+    }
+
     .waterMark {
         position: absolute;
         font-size: 25rem;
@@ -29,6 +34,7 @@
             opacity: 0;
             transition: opacity 500ms ease;
             position: absolute;
+            color: $color-main;
         }
 
         &:hover::after {
@@ -84,6 +90,7 @@
                         color: $color-accent;
                         opacity: 0;
                         transition: opacity 500ms ease;
+                        color: $color-main;
                     }
             
                     &:hover::after {
@@ -113,6 +120,7 @@
                         &::after {
                             content: "/>";
                             left: 105%;
+                            color: $color-main;
                         }
 
                         &::before {
@@ -143,11 +151,12 @@
 
                     .live-btn {
                         margin-right: 1rem;
-                        background-color: red;
+                        background-color: $color-main;
+                        color: #fff;
                     }
 
                     .code-btn {
-                        border: 2px solid red;
+                        border: 2px solid $color-main;
                     }
 
                 }
@@ -201,9 +210,6 @@
 
 body.dark {
     .myWorkSection {
-        a {
-            color: #fff;
-        }
         .showcase-div {
             .row {
                 .details {

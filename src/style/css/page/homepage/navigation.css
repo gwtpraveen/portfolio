@@ -48,6 +48,7 @@
 }
 .nav .links .link::after {
   content: " />";
+  color: #3466aa;
 }
 .nav .links .link::before {
   content: "< ";

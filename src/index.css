@@ -15,6 +15,7 @@ body {
   padding: 0rem 1rem 0rem 1rem;
   overflow-x: hidden;
   transition: background-color 500ms ease;
+  background-color: #F1F1F1;
 }
 
 code {
@@ -27,6 +28,6 @@ p {
 }
 
 body.dark {
-  background-color: rgb(42, 42, 42);
-  color: #fff;
+  background-color: #1C1C1C;
+  color: #F1F1F1;
 }

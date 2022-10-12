@@ -25,6 +25,11 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  transition: 250ms ease-in;
+}
+.footer .container .toTop:hover {
+  background-color: #3466aa;
+  color: #fff;
 }
 
 @media (max-width: 450px) {

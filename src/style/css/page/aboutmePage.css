@@ -29,6 +29,7 @@
   opacity: 0;
   transition: opacity 500ms ease;
   position: absolute;
+  color: #3466aa;
 }
 .aboutmePage .details .h2:hover::after {
   opacity: 1;
@@ -58,6 +59,8 @@
   content: " />";
   opacity: 0;
   transition: 500ms ease;
+  color: #3466aa;
+  font-weight: bold;
 }
 .aboutmePage .details-row .whatiuse div ul li:hover::after {
   opacity: 1;
@@ -91,10 +94,11 @@
   height: 45px;
   border: 1px solid black;
   border-radius: 50%;
+  transition: 250ms ease-in;
 }
 .aboutmePage .details .social-links .social-link:hover {
-  color: red;
-  border-color: red;
+  color: #3466aa;
+  border-color: #3466aa;
 }
 .aboutmePage .details .education .h3 {
   font-size: 2.5rem;
@@ -116,13 +120,13 @@
 .aboutmePage .details .education .row .details .button {
   text-decoration: none;
   color: #000;
-  border: 2px solid red;
+  border: 2px solid #3466aa;
   padding: 0.5em 1em;
   border-radius: 25px;
   transition: 250ms ease-in;
 }
 .aboutmePage .details .education .row .details .button:hover {
-  background-color: red;
+  background-color: #3466aa;
   color: #fff;
 }
 .aboutmePage .details .education .row .img {
@@ -146,4 +150,15 @@
     max-width: 400px;
     margin: 0;
   }
+}
+body.dark .aboutmePage .details .social-links .social-link {
+  color: #fff;
+  border: 1px solid #fff;
+}
+body.dark .aboutmePage .details .social-links .social-link:hover {
+  color: #3466aa;
+  border-color: #3466aa;
+}
+body.dark .aboutmePage .details .education .row .button {
+  color: #fff;
 }

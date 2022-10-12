@@ -7,6 +7,11 @@
     position: relative;
     overflow-x: hidden;
     font-size: 1.1rem;
+
+    a {
+        color: $color-main;
+        text-decoration: none;
+    }
     
     .h1 {
         font-size: 3rem;
@@ -20,6 +25,7 @@
             opacity: 0;
             transition: opacity 500ms ease;
             position: absolute;
+            color: $color-main;
         }
 
         &:hover::after {
@@ -66,6 +72,7 @@
                         color: $color-accent;
                         opacity: 0;
                         transition: opacity 500ms ease;
+                        color: $color-main;
                     }
             
                     &:hover::after {
@@ -95,6 +102,7 @@
                         &::after {
                             content: "/>";
                             left: 105%;
+                            color: $color-main;
                         }
 
                         &::before {
@@ -125,11 +133,12 @@
 
                     .live-btn {
                         margin-right: 1rem;
-                        background-color: red;
+                        background-color: $color-main;
+                        color: #fff;
                     }
 
                     .code-btn {
-                        border: 2px solid red;
+                        border: 2px solid $color-main;
                     }
 
                 }
@@ -179,6 +188,20 @@
                     .link {
                         width: 50px;
                         height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.dark {
+    .mywork {
+        .col {
+            .row {
+                .links-div {
+                    .link {
+                        color: #fff;
                     }
                 }
             }

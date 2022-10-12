@@ -1,4 +1,4 @@
-@use "../../scss/global/colors" as *;
+@use "../global/colors" as *;
 
 .aboutmePage {
         max-width: 1440px;
@@ -33,6 +33,7 @@
                 opacity: 0;
                 transition: opacity 500ms ease;
                 position: absolute;
+                color: $color-main;
             }
     
             &:hover::after {
@@ -68,6 +69,8 @@
                                 content: " />";
                                 opacity: 0;
                                 transition: 500ms ease;
+                                color: $color-main;
+                                font-weight: bold;
                             }
 
                             &:hover::after {
@@ -110,10 +113,11 @@
                 height: 45px;
                 border: 1px solid black;
                 border-radius: 50%;
+                transition: 250ms ease-in;
 
                 &:hover {
-                    color: red;
-                    border-color: red;
+                    color: $color-main;
+                    border-color: $color-main;
                 }
             }
         }
@@ -143,13 +147,13 @@
                     .button {
                         text-decoration: none;
                         color: #000;
-                        border: 2px solid red;
+                        border: 2px solid $color-main;
                         padding: .5em 1em;
                         border-radius: 25px;
                         transition: 250ms ease-in;
 
                         &:hover {
-                            background-color: red;
+                            background-color: $color-main;
                             color: #fff;
                         }
                     }
@@ -189,6 +193,31 @@
                     }
                 }
                     
+            }
+        }
+    }
+}
+
+body.dark {
+    .aboutmePage {
+        .details {
+            .social-links {
+                .social-link {
+                    color: #fff;
+                    border: 1px solid #fff;
+
+                    &:hover {
+                        color: $color-main;
+                        border-color: $color-main;
+                    }
+                }
+            }
+            .education {
+                .row {
+                    .button {
+                        color: #fff;
+                    }
+                }
             }
         }
     }

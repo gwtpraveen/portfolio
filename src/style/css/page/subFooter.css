@@ -24,6 +24,7 @@
 }
 .subFooter .links .link a::after {
   content: " />";
+  color: #3466aa;
 }
 .subFooter .links .link a::after {
   opacity: 0;
@@ -53,4 +54,7 @@
     align-items: flex-start;
     gap: 1rem;
   }
+}
+body.dark .subFooter .links .link a {
+  color: #fff;
 }

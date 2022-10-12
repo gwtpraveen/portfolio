@@ -29,6 +29,7 @@
   opacity: 0;
   transition: opacity 500ms ease;
   position: absolute;
+  color: #3466aa;
 }
 .aboutMe .details .h2:hover::after {
   opacity: 1;
@@ -58,6 +59,8 @@
   content: " />";
   opacity: 0;
   transition: 500ms ease;
+  color: #3466aa;
+  font-weight: bold;
 }
 .aboutMe .details-row .whatiuse div ul li:hover::after {
   opacity: 1;
@@ -90,10 +93,11 @@
   height: 45px;
   border: 1px solid black;
   border-radius: 50%;
+  transition: 250ms ease-in;
 }
 .aboutMe .details .social-links .social-link:hover {
-  color: red;
-  border-color: red;
+  color: #3466aa;
+  border-color: #3466aa;
 }
 
 @media (max-width: 800px) {
@@ -120,6 +124,6 @@ body.dark .aboutMe .details .social-links .social-link {
   border-color: #fff;
 }
 body.dark .aboutMe .details .social-links .social-link:hover {
-  color: red;
-  border-color: red;
+  color: #3466aa;
+  border-color: #3466aa;
 }

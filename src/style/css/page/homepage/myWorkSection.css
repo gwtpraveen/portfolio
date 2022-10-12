@@ -5,6 +5,10 @@
   position: relative;
   overflow-x: hidden;
 }
+.myWorkSection a {
+  color: #3466aa;
+  text-decoration: none;
+}
 .myWorkSection .waterMark {
   position: absolute;
   font-size: 25rem;
@@ -26,6 +30,7 @@
   opacity: 0;
   transition: opacity 500ms ease;
   position: absolute;
+  color: #3466aa;
 }
 .myWorkSection .h2:hover::after {
   opacity: 1;
@@ -73,6 +78,7 @@
   color: black;
   opacity: 0;
   transition: opacity 500ms ease;
+  color: #3466aa;
 }
 .myWorkSection .showcase-div .row .details-title:hover::after {
   opacity: 1;
@@ -98,6 +104,7 @@
 .myWorkSection .showcase-div .row .details-ul_li::after {
   content: "/>";
   left: 105%;
+  color: #3466aa;
 }
 .myWorkSection .showcase-div .row .details-ul_li::before {
   content: "<";
@@ -122,10 +129,11 @@
 }
 .myWorkSection .showcase-div .row .details .links-div .live-btn {
   margin-right: 1rem;
-  background-color: red;
+  background-color: #3466aa;
+  color: #fff;
 }
 .myWorkSection .showcase-div .row .details .links-div .code-btn {
-  border: 2px solid red;
+  border: 2px solid #3466aa;
 }
 .myWorkSection .showcase-div .row .details-left {
   justify-self: flex-end;
@@ -161,9 +169,6 @@
   .myWorkSection .showcase-div .row.img-top .thumbnail {
     order: 1;
   }
-}
-body.dark .myWorkSection a {
-  color: #fff;
 }
 body.dark .myWorkSection .showcase-div .row .details .links-div .link {
   color: #fff;

@@ -10,6 +10,7 @@ let YOUR_PUBLIC_KEY = "gAQRP7Tgb2s4t295v";
 
 const ContactMe = (props) => {
     const form = useRef();
+    const email = useRef();
 
 
     const handleFocus = e => {
@@ -22,17 +23,21 @@ const ContactMe = (props) => {
 
     const handleSubmit = (e, YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY) => {
         e.preventDefault();
+        if (email.current.firstElementChild.value !== "") {
+            emailjs.sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, YOUR_PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text);
+                alert("message send")
+            }, (error) => {
+                console.log(error.text);
+                alert("message not send")
+            });
+            e.target.reset();
+        } else {
+            alert("please provide your email address")
+        }
 
-        emailjs.sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, YOUR_PUBLIC_KEY)
-        .then((result) => {
-            console.log(result.text);
-            alert("message send")
-        }, (error) => {
-            console.log(error.text);
-            alert("message not send")
-        });
 
-        e.target.reset();
 
     };
 
@@ -46,7 +51,7 @@ const ContactMe = (props) => {
                     <div className="input-group">
                         <input type="text" name="name" id="name" className="input" placeholder="Name" onFocus={handleFocus} onBlur={handleBlur} autoComplete="off"/>
                     </div>
-                    <div className="input-group">
+                    <div className="input-group" ref={email}>
                         <input type="email" name="email" id="email" className="input" placeholder="E-mail" onFocus={handleFocus} onBlur={handleBlur} autoComplete="off"/>
                     </div>
                     <div className="input-group">

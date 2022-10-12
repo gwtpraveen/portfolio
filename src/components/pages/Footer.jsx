@@ -11,7 +11,7 @@ const Footer = (props) => {
     return ( 
         <footer className="footer">
             <div className="container">
-                <p className="copyright">Design + build by Thamindu Praveen ⓒ2022</p>
+                <p className="copyright">Design + build by Thamindu Praveen ⓒ 2022</p>
                 <button className="toTop" onClick={handleToTop}>
                     <i className="fa-solid fa-angle-up"></i>
                 </button>
