@@ -2,6 +2,7 @@ import "../../../style/css/page/homepage/contactMe.css";
 import BounceLetter from "../../common/BounceLetter";
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 
 let YOUR_SERVICE_ID = "service_0g8mmrs";
@@ -11,6 +12,8 @@ let YOUR_PUBLIC_KEY = "gAQRP7Tgb2s4t295v";
 const ContactMe = (props) => {
     const form = useRef();
     const email = useRef();
+    const dark = "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png";
+    const light = "https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png";
 
 
     const handleFocus = e => {
@@ -64,7 +67,17 @@ const ContactMe = (props) => {
                 </form>
             </div>
             <div className="map-container">
-                <div id="map" className="map"></div>
+                <MapContainer center={[6.41887, 80.81877]} zoom={7} scrollWheelZoom={false}>
+                    <TileLayer
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        url={light}
+                    />
+                    <Marker position={[6.41887, 80.81877]}>
+                        <Popup>
+                        A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                </MapContainer>
             </div>
         </section>
      );
