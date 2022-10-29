@@ -67,12 +67,12 @@ const ContactMe = (props) => {
                 </form>
             </div>
             <div className="map-container">
-                <MapContainer center={[6.41887, 80.81877]} zoom={7} scrollWheelZoom={false}>
+                <MapContainer center={[6.423054, 80.815881]} zoom={7} scrollWheelZoom={false}>
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url={light}
                     />
-                    <Marker position={[6.41887, 80.81877]}>
+                    <Marker position={[6.423054, 80.815881]}>
                         <Popup>
                         A pretty CSS3 popup. <br /> Easily customizable.
                         </Popup>
