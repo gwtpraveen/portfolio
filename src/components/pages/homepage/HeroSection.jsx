@@ -3,10 +3,13 @@ import Navigation from "../Navigation";
 import "../../../style/css/page/homepage/heroSection.css";
 import "../../../style/css/utils/buttons.css";
 import canvasAnimation from "../canvasAnimation";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useLayoutEffect } from "react";
+import { gsap } from "gsap";
 
 const HeroSection = (props) => {
     const canvasEle = useRef();
+    const heroSection = useRef();
+
     const handleTheme = () => {
         document.body.classList.toggle("dark");
     };
@@ -15,14 +18,23 @@ const HeroSection = (props) => {
         // canvasAnimation();
     })
 
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+            let tl = gsap.timeline();
+            tl.from(".nav", {x: 1000, duration: 2, ease:"back"});
+            tl.from(".content-div", { x: -1000, duration: 2, ease:"back"}, "<0.3");
+            tl.from(".theme-switch", {opacity:0, duration: 1, ease: "back"});
+        }, heroSection)
+    }, [])
+
     return (
-        <section className="hero-section">
-            <Navigation />
+        <section className="hero-section" ref={heroSection}>
+            <Navigation className="nav"/>
             <div className="content-div">
                 <h1 aria-label="Hi, I'm Praveen, Web Developer" className="h1">
-                    <BounceLetter>Hi,</BounceLetter><br />
-                    <BounceLetter>I'm</BounceLetter> <BounceLetter>Praveen,</BounceLetter><br />
-                    <BounceLetter>Web</BounceLetter> <BounceLetter>Developer.</BounceLetter>
+                    <BounceLetter className="bounce">Hi,</BounceLetter><br />
+                    <BounceLetter className="bounce">I'm</BounceLetter> <BounceLetter className="bounce">Praveen,</BounceLetter><br />
+                    <BounceLetter className="bounce">Web</BounceLetter> <BounceLetter className="bounce">Developer.</BounceLetter>
                 </h1>
                 <p className="discription">Junior Front End Developer</p>
                 <a className="btn" href="#mywork">Check My Work</a>
