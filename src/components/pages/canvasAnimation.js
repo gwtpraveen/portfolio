@@ -12,7 +12,7 @@ const canvasAnimation = () =>  {
             this.speedX = speedX;
             this.speedY = speedY;
             this.size = 5;
-            this.color = "green";
+            this.color = "#003eaa";
         }
     
         draw() {
@@ -58,7 +58,7 @@ const canvasAnimation = () =>  {
               let distanse = Math.sqrt(dx * dx + dy * dy);
               if (distanse < 150 && distanse > 15) {
                 ctx.beginPath();
-                ctx.strokeStyle = "green";
+                ctx.strokeStyle = "#003eaa54";
                 ctx.moveTo(particleArrry[i].x, particleArrry[i].y);
                 ctx.lineTo(particleArrry[j].x, particleArrry[j].y);
                 ctx.stroke();

@@ -15,7 +15,7 @@ const HeroSection = (props) => {
     };
 
     useEffect(() => {
-        // canvasAnimation();
+        canvasAnimation();
     })
 
     useLayoutEffect(() => {
